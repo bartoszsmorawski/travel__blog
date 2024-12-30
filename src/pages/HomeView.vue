@@ -1,14 +1,9 @@
 <template>
-Strona gówna
-    </template>
-    
-    <script>
-export default {
-  name: 'HomeView'
-}
-    </script>
-    
-    <style>
+<TravelNavbar/>
+</template>
 
-    </style>
-    
+<script setup>
+import TravelNavbar from "../components/organisms/TravelNavbar.vue";
+</script>
+
+<style></style>
