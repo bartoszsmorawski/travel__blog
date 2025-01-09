@@ -67,12 +67,16 @@
       </li>
       <li><a href="#">WYCIECZKI</a></li>
       <li><a href="#">SKLEP</a></li>
+      <li>
+        <SearchInput />
+      </li>
     </ul>
   </nav>
 
 </template>
 <script setup>
 import { ChevronDown, ChevronUp } from 'lucide-vue-next';
+import SearchInput from './SearchInput.vue';
 </script>
 <style scoped>
 /* Podstawowy styl nawigacji */
@@ -146,7 +150,7 @@ nav {
   display: block;
 }
 
-.up{
+.up {
   display: none;
 }
 
@@ -157,5 +161,4 @@ nav {
 .menu li:hover .down {
   display: none;
 }
-
 </style>
