@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile-navbar">
+  <div class="MobileNavbar">
     <button class="hamburger" @click="() => isOpen = !isOpen">
       <AlignJustify v-if="!isOpen" color="white" :size="35" />
       <X v-else color="white" :size="35" />
@@ -77,13 +77,15 @@
         </ul>
       </nav>
     </Transition>
+    <div class="SearchInput">
+      <SearchInput :iconSize="30" />
+    </div>
   </div>
-
-
 </template>
 <script setup>
 import { AlignJustify, X, ChevronDown, ChevronUp } from 'lucide-vue-next';
 import { ref } from "vue"
+import SearchInput from './SearchInput.vue';
 const isOpen = ref(false)
 const isOpenSubMenu = ref(false)
 const isOpenSubMenu1 = ref(false)
@@ -128,7 +130,9 @@ li a:hover {
   background-color: #666;
 }
 
-.mobile-navbar {
+.MobileNavbar {
+  display: flex;
+  justify-content: space-between;
   background-color: #000000;
   padding: 20px;
 }
@@ -143,4 +147,5 @@ li a:hover {
 .v-leave-to {
   opacity: 0;
 }
+
 </style>

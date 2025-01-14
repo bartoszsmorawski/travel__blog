@@ -8,7 +8,7 @@ export default function () {
     onMounted(() => window.addEventListener('resize', onWidthChange));
     onUnmounted(() => window.removeEventListener('resize', onWidthChange));
 
-    const isMobile = computed(() => windowWidth.value < 768);
+    const isMobile = computed(() => windowWidth.value < 841);
 
     return {
         windowWidth: windowWidth,
