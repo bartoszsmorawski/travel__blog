@@ -4,6 +4,9 @@
       <AlignJustify v-if="!isOpen" color="white" :size="35" />
       <X v-else color="white" :size="35" />
     </button>
+    <div class="SearchInput">
+      <SearchInput :iconSize="30" />
+    </div>
     <Transition>
       <nav v-if="isOpen">
         <ul class="menu">
@@ -77,9 +80,6 @@
         </ul>
       </nav>
     </Transition>
-    <div class="SearchInput">
-      <SearchInput :iconSize="30" />
-    </div>
   </div>
 </template>
 <script setup>
@@ -103,7 +103,7 @@ const isOpenSubMenu2 = ref(false)
 
 nav {
   padding: 0px;
-
+  width: 100%;
 }
 
 li {
@@ -133,6 +133,7 @@ li a:hover {
 .MobileNavbar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: #000000;
   padding: 20px;
 }
