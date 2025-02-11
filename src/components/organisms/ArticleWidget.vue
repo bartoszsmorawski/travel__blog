@@ -1,6 +1,6 @@
 <template>
   <div class="blog">
-    <a :href="link" class="blog"> <img :src="srcImg" :alt="altText" class="blog-image" />
+    <a :href="link" class="blog-link"> <img :src="srcImg" :alt="altText" class="blog-image" />
       <div class="blog-title">{{ title }}</div>
     </a>
   </div>
@@ -25,6 +25,9 @@ defineProps({
   text-decoration: none;
 }
 
+.blog-link {
+  text-decoration: none;
+}
 
 .blog-image {
   width: 100%;
