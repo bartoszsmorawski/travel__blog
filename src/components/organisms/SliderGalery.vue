@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper-container">
+  <div class="swiper-container swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="@/assets/image/grece.jpg" alt="Slide 1">
@@ -47,7 +47,6 @@ onMounted(() => {
 <style scoped>
 .swiper-container {
   width: 100%;
-  max-width: 1200px; /* Maksymalna szerokość */
   height: 500px; /* Ustaw wysokość */
 }
 
