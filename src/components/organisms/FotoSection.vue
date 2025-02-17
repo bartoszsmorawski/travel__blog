@@ -58,8 +58,6 @@ const paddingValue = computed(() => props.rightVariantImage ? '0px 0px 0px 50px'
     max-height: 100%;
 }
 
-
-/* Styl główny sekcji */
 .travel-section {
     display: flex;
     align-items: center;
@@ -69,23 +67,21 @@ const paddingValue = computed(() => props.rightVariantImage ? '0px 0px 0px 50px'
     margin: 0 auto;
 }
 
-/* Styl dla obrazka */
+
 .image-container img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
     flex: 1;
-    /* Obraz zajmuje część sekcji */
+
 }
 
-/* Styl dla kontenera z treścią */
 .content-container {
     flex: 1;
     text-align: left;
 }
 
-/* Styl nagłówka */
 .content-container h2 {
     font-size: 2rem;
     font-family: 'Arial', sans-serif;
@@ -93,14 +89,12 @@ const paddingValue = computed(() => props.rightVariantImage ? '0px 0px 0px 50px'
     line-height: 1.4;
 }
 
-/* Styl tekstu */
 .content-container p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-/* Styl przycisku */
 .cta-button {
     background-color: #007bff;
     color: #fff;
@@ -116,7 +110,6 @@ const paddingValue = computed(() => props.rightVariantImage ? '0px 0px 0px 50px'
     background-color: #0056b3;
 }
 
-/* Responsywność */
 @media (max-width: 768px) {
     .travel-section {
         flex-direction: column;
