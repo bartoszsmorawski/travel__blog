@@ -11,7 +11,6 @@
         <img src="@/assets/image/maledives.jpg" alt="Slide 3">
       </div>
     </div>
-    <!-- Paginacja i nawigacja -->
     <div class="swiper-pagination"></div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -28,8 +27,8 @@ import 'swiper/css/navigation';
 
 onMounted(() => {
   new Swiper('.swiper-container', {
-    modules: [Pagination, Navigation], // Dodajemy moduły
-    slidesPerView: 1, // Pojedynczy slajd na ekranie
+    modules: [Pagination, Navigation], 
+    slidesPerView: 1, 
     spaceBetween: 10,
     loop: true, // Zapętlenie
     pagination: {
@@ -47,25 +46,25 @@ onMounted(() => {
 <style scoped>
 .swiper-container {
   width: 100%;
-  height: 500px; /* Ustaw wysokość */
+  height: 500px; 
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Dopasowanie do kontenera */
+  height: 100%; 
 }
 
 .swiper-slide img {
-  width: 100%; /* Dopasowanie szerokości */
-  height: 100%; /* Dopasowanie wysokości */
-  object-fit: cover; /* Przycięcie obrazu, aby pasował */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
 }
 
 @media (max-width: 768px) {
   .swiper-container {
-    height: 300px; /* Mniejsza wysokość na telefonach */
+    height: 300px; 
   }
 }
 
