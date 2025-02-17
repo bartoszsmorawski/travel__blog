@@ -2,13 +2,13 @@
   <div class="swiper-container swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="@/assets/image/grece.jpg" alt="Slide 1">
+        <img src="@/assets/image/grecja.png" alt="Slide 1">
       </div>
       <div class="swiper-slide">
-        <img src="@/assets/image/rome.jpg" alt="Slide 2">
+        <img src="@/assets/image/rzym.png" alt="Slide 2">
       </div>
       <div class="swiper-slide">
-        <img src="@/assets/image/maledives.jpg" alt="Slide 3">
+        <img src="@/assets/image/malediwy.png" alt="Slide 3">
       </div>
     </div>
     <div class="swiper-pagination"></div>
@@ -30,7 +30,7 @@ onMounted(() => {
     modules: [Pagination, Navigation], 
     slidesPerView: 1, 
     spaceBetween: 10,
-    loop: true, // Zapętlenie
+    loop: true, 
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
