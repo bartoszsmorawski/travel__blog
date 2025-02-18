@@ -17,8 +17,9 @@
     </div>
     <FotoSection title="Italian" :srcImg="require('@/assets/image/morze.jpg')" altText="Morze"
         :rightVariantImage="false" />
-    <FotoSectionBaner />
 
+    <FotoSectionBaner title="Podróż samolotem" :srcImg="require('@/assets/image/morze.jpg')"
+        description="Lecisz pierwszy raz samolotem ? Te lifehacki pomogą Ci w przebyciu spokojnej podróźy oraz pelnej organizacji podczas odprawy. To prostrze niż Ci się wydaje. Sprawdź sam klikając w przycisk poniżej." />
 
 </template>
 
