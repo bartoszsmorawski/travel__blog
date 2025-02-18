@@ -15,7 +15,6 @@
 import { computed } from 'vue';
 import BasicButton from '../molecules/BasicButton.vue';
 
-//stworzyc nowego propsa dla koloru tla, aby nie bylo zalezne od strony lewej lub prawej rightVariantImage:....
 const props = defineProps({
     rightVariantImage: {
         type: Boolean,
