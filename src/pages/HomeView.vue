@@ -1,5 +1,6 @@
 <template>
     <TravelNavbar />
+    <SliderGalery />
     <h2 class="ArticlesTitle">Nasze Wpisy</h2>
     <div class="ArticleGroup">
         <ArticleWidget title="Magiczne Zakątki Świata, Które Musisz Odwiedzić" link="https://www.google.pl/"
@@ -15,7 +16,8 @@
         <ArticleWidget title="Kultura, Przyroda i Adrenalina: Wybierz Swój Styl Podróżowania"
             link="https://www.google.pl/" :srcImg="require('@/assets/image/morze.jpg')" altText="Góry" />
     </div>
-    <FotoSection title="Italian" :srcImg="require('@/assets/image/morze.jpg')" altText="Morze" :rightVariantImage="false" />
+    <FotoSection title="Italian" :srcImg="require('@/assets/image/morze.jpg')" altText="Morze"
+        :rightVariantImage="false" />
 
 
 </template>
@@ -24,6 +26,7 @@
 import TravelNavbar from "../components/organisms/TravelNavbar.vue";
 import ArticleWidget from "../components/organisms/ArticleWidget.vue";
 import FotoSection from "@/components/organisms/FotoSection.vue";
+import SliderGalery from "@/components/organisms/SliderGalery.vue";
 </script>
 
 <style scoped>
