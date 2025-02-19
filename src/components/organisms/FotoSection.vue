@@ -47,9 +47,6 @@ const paddingValue = computed(() => props.rightVariantImage ? '0px 0px 0px 50px'
     text-align: center;
 }
 
-.Description {}
-
-
 .Image {
     height: 400px;
 }
