@@ -1,11 +1,8 @@
 <template>
     <section class="FotoSection">
         <div class="Content">
-            <h2 class="Title">Lorem ipsum</h2>
-            <p class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro molestias ad
-                laboriosam. Optio
-                consequuntur provident ducimus tenetur dignissimos delectus quibusdam blanditiis, quis fugiat similique
-                quos, maxime soluta sed dolorem!</p>
+            <h2 class="Title">{{ title }}</h2>
+            <p class="Description">{{ description }}</p>
             <BasicButton buttonText="Wiecej informacji..." buttonColor="#000000" />
         </div>
         <div class="Image"><img :src="srcImg" :alt="altText" class="blog-image" /></div>
@@ -20,6 +17,8 @@ const props = defineProps({
         type: Boolean,
         default: true
     },
+    title: String,
+    description: String,
     srcImg: String,
     altText: String,
 })
@@ -45,9 +44,6 @@ const paddingValue = computed(() => props.rightVariantImage ? '0px 0px 0px 50px'
 .Title {
     text-align: center;
 }
-
-.Description {}
-
 
 .Image {
     height: 400px;
