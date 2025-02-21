@@ -19,7 +19,7 @@
     <FotoSection title="Italian" :srcImg="require('@/assets/image/morze.jpg')" altText="Morze"
         :rightVariantImage="false" />
 
-
+    <FooterSection />
 </template>
 
 <script setup>
@@ -27,6 +27,7 @@ import TravelNavbar from "../components/organisms/TravelNavbar.vue";
 import ArticleWidget from "../components/organisms/ArticleWidget.vue";
 import FotoSection from "@/components/organisms/FotoSection.vue";
 import SliderGalery from "@/components/organisms/SliderGalery.vue";
+import FooterSection from "@/components/organisms/FooterSection.vue";
 </script>
 
 <style scoped>
