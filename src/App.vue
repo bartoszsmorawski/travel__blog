@@ -20,7 +20,7 @@ export default {
 }
 
 body {
-  background: #eee;
+  background: #ffffffe8;
   margin: 0px;
 }
 </style>
