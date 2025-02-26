@@ -1,5 +1,5 @@
 <template>
-    <section class="Footer">
+    <footer class="Footer">
         <div class="Content">
             <h2 class="Title">{{ title }}</h2>
             <h3 class="subTitle">{{ subTitle }}</h3>
@@ -12,9 +12,12 @@
                 <a href="">Nasze linki</a>
             </div>
         </div>
-        <SocialMedia />
-        <p>Copyright 2025 © All rights Reserved.</p>
-    </section>
+        <div class="FooterBottom">
+            <SocialMedia />
+            <p class="Copyright">Copyright 2025 © All rights Reserved.</p>
+        </div>
+
+    </footer>
 </template>
 <script setup>
 import BasicButton from '../molecules/BasicButton.vue';
@@ -25,4 +28,13 @@ defineProps({
 })
 
 </script>
-<style scoped></style>
+<style scoped>
+.FooterBottom{
+    background-color: #000000;
+}
+.Copyright{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+</style>
