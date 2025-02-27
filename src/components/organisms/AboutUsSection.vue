@@ -23,39 +23,66 @@ defineProps({
 
 </script>
 <style scoped>
-.AboutUsSection {}
+.AboutUsSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1100px;
+}
 
 ;
 
-.Content {}
+.Content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 ;
 
-.Title {}
+.Title {
+    text-align: center;
+}
 
 ;
 
-.subTitle {}
+.subTitle {
+    text-align: center;
+}
 
 ;
 
-.icoInstagram {}
+.icoInstagram {
+    color: #C13584;
+}
 
 ;
 
-.icoYouTube {}
+.icoYouTube {
+    color: #FF0000;
+}
 
 ;
 
-.icoFacebook {}
+.icoFacebook {
+    color: #1877F2;
+}
 
 ;
 
-.Description {}
+.Description {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0;
+}
 
 ;
 
-.Image {}
+.Image {
+    max-width: 400px;
+    margin: 0 auto;
+}
 
 ;
 </style>
