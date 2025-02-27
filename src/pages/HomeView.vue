@@ -1,5 +1,6 @@
 <template>
     <TravelNavbar />
+    <SliderGalery />
     <h2 class="ArticlesTitle">Nasze Wpisy</h2>
     <div class="ArticleGroup">
         <ArticleWidget title="Magiczne Zakątki Świata, Które Musisz Odwiedzić" link="https://www.google.pl/"
@@ -45,6 +46,7 @@ import ArticleWidget from "../components/organisms/ArticleWidget.vue";
 import FotoSection from "@/components/organisms/FotoSection.vue";
 import FotoSectionBaner from "@/components/organisms/FotoSectionBaner.vue";
 import AboutUsSection from "@/components/organisms/AboutUsSection.vue";
+import SliderGalery from "@/components/organisms/SliderGalery.vue";
 </script>
 
 <style scoped>
