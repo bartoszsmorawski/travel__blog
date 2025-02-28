@@ -8,7 +8,7 @@
 export default {
   name: 'App',
 
-}
+};
 </script>
 
 <style>
@@ -20,7 +20,7 @@ export default {
 }
 
 body {
-  background: #ffffffe8;
+  background: #FFFFFF;
   margin: 0px;
 }
 </style>
