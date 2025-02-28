@@ -2,7 +2,7 @@
     <section class="FotoBaner">
         <h2 class="Title">{{ title }}</h2>
         <p class="Description">{{ description }}</p>
-        <BasicButton buttonText="Kliknij tutaj !" class="BasicButton" />
+        <BasicButton buttonText="Kliknij tutaj !" buttonColor="#000000"/>
     </section>
 
 </template>
@@ -46,9 +46,5 @@ const backgroundImageValue = computed(() => `url("${props.srcImg}")`);
 .FotoBaner * {
     position: relative;
     z-index: 2;
-}
-
-.BasicButton {
-    background-color: #000000;
 }
 </style>

@@ -16,9 +16,28 @@
         <ArticleWidget title="Kultura, Przyroda i Adrenalina: Wybierz Swój Styl Podróżowania"
             link="https://www.google.pl/" :srcImg="require('@/assets/image/morze.jpg')" altText="Góry" />
     </div>
-    <FotoSection title="Italian" :srcImg="require('@/assets/image/morze.jpg')" altText="Morze"
-        :rightVariantImage="false" />
+    <FotoSection title="Wloskie morze, czy warto wybrać się tam na wakacje ?"
+        :srcImg="require('@/assets/image/morze.jpg')" altText="Sea" :rightVariantImage="false" description="Morze Włoskie to ogólne określenie na wody otaczające Włochy, czyli Morze Liguryjskie, Tyrreńskie, Jońskie i Adriatyckie. Każde z nich oferuje piękne plaże, lazurową wodę i malownicze wybrzeża.
+Dlaczego warto się tam wybrać?
+✔ Ciepły, śródziemnomorski klimat
+✔ Krystalicznie czysta woda idealna do kąpieli i nurkowania
+✔ Urokliwe nadmorskie miasteczka, jak Amalfi, Cinque Terre czy Rimini
+✔ Bogata kultura, wyśmienita kuchnia i niesamowite widoki
 
+To idealne miejsce na relaks, zwiedzanie i wakacyjne przygody! 🌊☀️" />
+
+    <FotoSectionBaner title="Podróż samolotem" :srcImg="require('@/assets/image/morze.jpg')" altText="Sea" description="Podróż samolotem to szybki i wygodny sposób przemieszczania się na duże odległości. Po starcie można podziwiać widoki z okna, a lot często przebiega spokojnie i komfortowo. Dzięki nowoczesnym technologiom podróże lotnicze są dobrze zorganizowane i bezpieczne.
+Dlaczego nie warto się bać latania?
+✈️ Samoloty to jeden z najbezpieczniejszych środków transportu
+✈️ Piloci są świetnie wyszkoleni i doświadczeni
+✈️ Turbulencje są normalnym zjawiskiem i nie stanowią zagrożenia
+✈️ Dzięki lataniu można szybko dotrzeć do wymarzonych miejsc
+
+Strach przed lataniem jest naturalny, ale warto pamiętać, że miliony ludzi codziennie latają bez problemów! 😊" />
+
+    <AboutUsSection title="Blog podróżniczy Jan Nowak" subTitle="O mnie"
+        :srcImg="require('@/assets/image/traveler.jpg')" altText="Traveler picture"
+        description="Podróżowanie to moja pasja i sposób na życie. Uwielbiam odkrywać nowe miejsca, poznawać lokalne kultury i smakować tradycyjne potrawy. Każda podróż to dla mnie nie tylko przygoda, ale też okazja do nauki i poszerzania horyzontów. Na mojej stronie dzielę się relacjami z wypraw, praktycznymi poradami i inspiracjami, które pomogą Ci zaplanować własne podróże. Świat jest pełen niezwykłych miejsc chodź, odkryjmy je razem!" />
     <FotoSectionBaner title="Podróż samolotem" :srcImg="require('@/assets/image/morze.jpg')"
         description="Lecisz pierwszy raz samolotem ? Te lifehacki pomogą Ci w przebyciu spokojnej podróźy oraz pelnej organizacji podczas odprawy. To prostrze niż Ci się wydaje. Sprawdź sam klikając w przycisk poniżej." />
         
@@ -30,6 +49,7 @@ import TravelNavbar from "../components/organisms/TravelNavbar.vue";
 import ArticleWidget from "../components/organisms/ArticleWidget.vue";
 import FotoSection from "@/components/organisms/FotoSection.vue";
 import FotoSectionBaner from "@/components/organisms/FotoSectionBaner.vue";
+import AboutUsSection from "@/components/organisms/AboutUsSection.vue";
 import SliderGalery from "@/components/organisms/SliderGalery.vue";
 import FooterSection from "@/components/organisms/FooterSection.vue";
 </script>
