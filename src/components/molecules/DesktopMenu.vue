@@ -5,8 +5,8 @@
       <li class="has-submenu">
         <a href="#"> KRAJE I MIEJSCA
           <div class="chevronDownUp">
-            <ChevronDown class="down" color="white" :size="15" />
-            <ChevronUp class="up" color="white" :size="15" />
+            <ChevronDown class="down" color="#4A4A4A" :size="15" />
+            <ChevronUp class="up" color="#4A4A4A" :size="15" />
           </div>
         </a>
         <ul class="submenu">
@@ -35,8 +35,8 @@
       <li class="has-submenu">
         <a href="#">BLOG
           <div class="chevronDownUp">
-            <ChevronDown class="down" color="white" :size="15" />
-            <ChevronUp class="up" color="white" :size="15" />
+            <ChevronDown class="down" color="#4A4A4A" :size="15" />
+            <ChevronUp class="up" color="#4A4A4A" :size="15" />
           </div>
         </a>
         <ul class="submenu">
@@ -53,8 +53,8 @@
       <li class="has-submenu">
         <a href="#">O NAS
           <div class="chevronDownUp">
-            <ChevronDown class="down" color="white" :size="15" />
-            <ChevronUp class="up" color="white" :size="15" />
+            <ChevronDown class="down" color="#4A4A4A" :size="15" />
+            <ChevronUp class="up" color="#4A4A4A" :size="15" />
           </div>
         </a>
         <ul class="submenu">
@@ -81,7 +81,7 @@ import SearchInput from './SearchInput.vue';
 <style scoped>
 /* Podstawowy styl nawigacji */
 nav {
-  background-color: #333;
+  background-color: #eee;
   padding: 0;
 }
 
@@ -99,7 +99,7 @@ nav {
 
 .menu>li>a {
   display: flex;
-  color: white;
+  color: #4A4A4A;
   text-decoration: none;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
