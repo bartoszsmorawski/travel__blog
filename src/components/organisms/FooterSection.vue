@@ -25,47 +25,79 @@ import SocialMedia from '../molecules/SocialMedia.vue';
 defineProps({
     title: String,
     subTitle: String,
-})
+});
 </script>
 <style scoped>
+.Footer{
+    background-color: #F5F5F4;
+    margin-top: 50px;
+}
 .Content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #DDD0C8;
+    background-color: #e7e7e7;
     color: #4A4A4A;
+}
+
+.Newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .input {
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    border: solid 1px #4A4A4A;
-    border-radius: 5px;
-    color: #4A4A4A; 
-    
+    background: #ffffffcc;
+    color: #1D3557;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #4A4A4A;
+    border-radius: 12px;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.input::placeholder {
+    color: #0000008f;
+    opacity: 0.7;
+}
+
+.input:focus {
+    background: #ffffff;
+    border-color: #1D3557;
 }
 
 .button {
-    padding: 10px;
-    margin: 10px;
-    width: 100px;
-    border: solid 1px #4A4A4A;
-    border-radius: 5px;
-    color: #4A4A4A;
+    background: #ffffffcc;
+    color: #1D3557;
+    white-space: nowrap;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #4A4A4A;
+    border-radius: 12px;
     cursor: pointer;
+}
+
+.button:hover {
+    background: #ffffff;
 }
 
 .subMenuItem {
     color: #4A4A4A;
     text-decoration: none;
+    font-size: 16px;
     padding: 10px;
 }
 
 .FooterBottom {
-    background-color: #ddd0c8b8;
+    background-color: #F5F5F4;
 }
 
 .Copyright {
@@ -81,4 +113,17 @@ defineProps({
     padding: 10px;
 }
 
+.Title {
+    color: #4A4A4A;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+
+}
+
+.subTitle {
+    color: #4A4A4A;
+    font-size: 18px;
+    font-weight: normal;
+}
 </style>
