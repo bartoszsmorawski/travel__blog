@@ -5,7 +5,11 @@
 defineProps({
     buttonColor: {
         type: String,
-        default: "#B0B8B4"
+        default: "#e0dede82"
+    },
+    color: {
+        type: String,
+        default: "#4A4A4A"
     },
     buttonText: String,
 });
@@ -18,7 +22,7 @@ defineProps({
     border: 1px solid #4A4A4A;
     border-radius: 3px;
     background-color: v-bind(buttonColor);
-    color: #4A4A4A;
+    color: v-bind(color);
     cursor: pointer;
     margin: 10px;
 }
