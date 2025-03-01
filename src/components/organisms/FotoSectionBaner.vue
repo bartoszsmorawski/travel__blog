@@ -2,7 +2,7 @@
     <section class="FotoBaner">
         <h2 class="Title">{{ title }}</h2>
         <p class="Description">{{ description }}</p>
-        <BasicButton buttonText="Kliknij tutaj !" buttonColor="#000000"/>
+        <BasicButton buttonText="Kliknij tutaj !"/>
     </section>
 
 </template>
