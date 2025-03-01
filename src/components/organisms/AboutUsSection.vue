@@ -1,14 +1,26 @@
 <template>
     <section class="AboutUsSection">
-        <div class="Content">
-            <h2 class="Title">{{ title }}</h2>
-            <h3 class="subTitle">{{ subTitle }}</h3>
-            <Instagram class="icoInstagram" />
-            <Youtube class="icoYouTube" />
-            <Facebook class="icoFacebook" />
-            <p class="Description">{{ description }}</p>
+        <div class="container">
+            <div class="image">
+                <img :src="srcImg" :alt="altText" />
+            </div>
+            <div class="content">
+                <h2 class="Title">{{ title }}</h2>
+                <h3 class="subTitle">{{ subTitle }}</h3>
+                <div class="social-icons">
+                    <a class="SocialMediaLink" href="https://www.instagram.com/">
+                        <Instagram class="icoInstagram" />
+                    </a>
+                    <a class="SocialMediaLink" href="https://www.youtube.com/">
+                        <Youtube class="icoYouTube" />
+                    </a>
+                    <a class="SocialMediaLink" href="https://www.facebook.com/">
+                        <Facebook class="icoFacebook" />
+                    </a>
+                </div>
+                <p class="Description">{{ description }}</p>
+            </div>
         </div>
-        <div class="Image"><img :src="srcImg" :alt="altText" /></div>
     </section>
 </template>
 <script setup>
@@ -24,65 +36,65 @@ defineProps({
 </script>
 <style scoped>
 .AboutUsSection {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    max-width: 1100px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
 }
-
-;
-
-.Content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-;
 
 .Title {
-    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-;
-
-.subTitle {
-    text-align: center;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-;
-
-.icoInstagram {
-    color: #C13584;
+.image img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
 }
 
-;
-
-.icoYouTube {
-    color: #FF0000;
+.content {
+    text-align: left;
+    max-width: 500px;
 }
 
-;
-
-.icoFacebook {
-    color: #1877F2;
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-;
-
-.Description {
-    text-align: justify;
-    line-height: 1.5;
-    margin: 0;
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-;
-
-.Image {
-    max-width: 400px;
-    margin: 0 auto;
+.social-icons img {
+    width: 32px;
+    height: 32px;
 }
 
-;
+.SocialMediaLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    border: solid 1px #4A4A4A;
+    background-color: #e0dede82;
+    color: #4A4A4A;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
 </style>
