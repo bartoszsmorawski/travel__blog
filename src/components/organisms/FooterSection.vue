@@ -18,7 +18,6 @@
             <SocialMedia />
             <p class="Copyright">Copyright 2025 © All rights Reserved.</p>
         </div>
-
     </footer>
 </template>
 <script setup>
@@ -35,38 +34,42 @@ defineProps({
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #000000;
-    color: #fff;
+    background-color: #DDD0C8;
+    color: #4A4A4A;
 }
 
 .input {
     padding: 10px;
     margin: 10px;
     width: 300px;
+    border: solid 1px #4A4A4A;
+    border-radius: 5px;
+    color: #4A4A4A; 
+    
 }
 
 .button {
     padding: 10px;
     margin: 10px;
     width: 100px;
-    background-color: #f5f5f5;
-    color: #000;
-    border: none;
+    border: solid 1px #4A4A4A;
+    border-radius: 5px;
+    color: #4A4A4A;
     cursor: pointer;
 }
 
 .subMenuItem {
-    color: #fff;
+    color: #4A4A4A;
     text-decoration: none;
     padding: 10px;
 }
 
 .FooterBottom {
-    background-color: #000000d8;
+    background-color: #ddd0c8b8;
 }
 
 .Copyright {
-    color: #fff;
+    color: #4A4A4A;
     text-align: center;
     padding: 10px;
 }
@@ -77,4 +80,5 @@ defineProps({
     gap: 20px;
     padding: 10px;
 }
+
 </style>
