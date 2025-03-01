@@ -3,7 +3,7 @@
         <div class="Content">
             <h2 class="Title">{{ title }}</h2>
             <p class="Description">{{ description }}</p>
-            <BasicButton buttonText="Wiecej informacji..." buttonColor="#000000" />
+            <BasicButton buttonText="Wiecej informacji..." />
         </div>
         <div class="Image"><img :src="srcImg" :alt="altText" class="blog-image" /></div>
     </section>
