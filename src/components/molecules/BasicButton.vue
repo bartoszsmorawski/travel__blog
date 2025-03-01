@@ -5,20 +5,21 @@
 defineProps({
     buttonColor: {
         type: String,
-        default: "#0073ad"
+        default: "#B0B8B4"
     },
     buttonText: String,
-})
+});
 </script>
 <style scoped>
 .Button {
     text-align: center;
     font-size: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #4A4A4A;
+    border-radius: 3px;
     background-color: v-bind(buttonColor);
-    color: #ffffff;
+    color: #4A4A4A;
     cursor: pointer;
+    margin: 10px;
 }
 </style>
