@@ -1,13 +1,13 @@
 <template>
-    <div class="SocialMedia">
-        <a class="SocialMediaIcon" href="https://www.instagram.com/">
-            <Instagram :size="35" color="#4A4A4A" class="icoInstagram" />
+    <div class="social-icons">
+        <a class="SocialMediaLink" href="https://www.instagram.com/">
+            <Instagram class="icoInstagram" />
         </a>
-        <a class="SocialMediaIcon" href="https://www.youtube.com/">
-            <Youtube :size="35" color="#4A4A4A" class="icoYouTube" />
+        <a class="SocialMediaLink" href="https://www.youtube.com/">
+            <Youtube class="icoYouTube" />
         </a>
-        <a class="SocialMediaIcon" href="https://www.facebook.com/">
-            <Facebook :size="35" color="#4A4A4A" class="icoFacebook" />
+        <a class="SocialMediaLink" href="https://www.facebook.com/">
+            <Facebook class="icoFacebook" />
         </a>
     </div>
 </template>
@@ -15,17 +15,23 @@
 import { Instagram, Youtube, Facebook } from 'lucide-vue-next';
 </script>
 <style scoped>
-.SocialMedia {
+.social-icons {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 30px;
 }
 
 
-.SocialMediaIcon {
-    margin-top: 10px;
+.SocialMediaLink {
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6px;
-    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 10%;
+    border: solid 1px #4A4A4A;
+    background-color: #e0dede82;
+    color: #4A4A4A;
 }
 </style>
