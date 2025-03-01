@@ -2,7 +2,7 @@
     <section class="FotoBaner">
         <h2 class="Title">{{ title }}</h2>
         <p class="Description">{{ description }}</p>
-        <BasicButton buttonText="Kliknij tutaj !"/>
+        <BasicButton color="#F5F5F4" buttonText="Kliknij tutaj !"/>
     </section>
 
 </template>
@@ -21,7 +21,7 @@ const backgroundImageValue = computed(() => `url("${props.srcImg}")`);
 </script>
 <style scoped>
 .FotoBaner {
-    color: #ffffff;
+    color: #F5F5F4;
     text-align: center;
     padding: 80px;
     background-image: v-bind(backgroundImageValue);
