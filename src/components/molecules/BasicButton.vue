@@ -5,7 +5,7 @@
 defineProps({
     buttonColor: {
         type: String,
-        default: "#e0dede82"
+        default: "#F5F5F4"
     },
     color: {
         type: String,
@@ -18,12 +18,13 @@ defineProps({
 .Button {
     text-align: center;
     font-size: 20px;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #4A4A4A;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: v-bind(buttonColor);
     color: v-bind(color);
     cursor: pointer;
     margin: 10px;
 }
 </style>
+
