@@ -22,10 +22,10 @@ import { Instagram, Youtube, Facebook } from 'lucide-vue-next';
 
 
 .SocialMediaIcon {
+    margin-top: 10px;
     align-items: center;
     justify-content: center;
-    background-color: #ffffffe8;
-    padding: 5px;
+    padding: 6px;
     border-radius: 8px;
 }
 </style>
