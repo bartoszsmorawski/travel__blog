@@ -18,7 +18,7 @@ defineProps({
   margin-top: 25px;
   width: 300px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden;
   text-align: center;
   background-color: #fff;
