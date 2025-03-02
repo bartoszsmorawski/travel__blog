@@ -34,12 +34,12 @@ To idealne miejsce na relaks, zwiedzanie i wakacyjne przygody! 🌊☀️" />
 
     <FotoSectionBaner title="Podróż samolotem" :srcImg="require('@/assets/image/morze.jpg')" altText="Sea" description="Podróż samolotem to szybki i wygodny sposób przemieszczania się na duże odległości. Po starcie można podziwiać widoki z okna, a lot często przebiega spokojnie i komfortowo. Dzięki nowoczesnym technologiom podróże lotnicze są dobrze zorganizowane i bezpieczne.
 Dlaczego nie warto się bać latania?
-✈️ Samoloty to jeden z najbezpieczniejszych środków transportu
-✈️ Piloci są świetnie wyszkoleni i doświadczeni
-✈️ Turbulencje są normalnym zjawiskiem i nie stanowią zagrożenia
-✈️ Dzięki lataniu można szybko dotrzeć do wymarzonych miejsc
+Samoloty to jeden z najbezpieczniejszych środków transportu
+Piloci są świetnie wyszkoleni i doświadczeni
+Turbulencje są normalnym zjawiskiem i nie stanowią zagrożenia
+Dzięki lataniu można szybko dotrzeć do wymarzonych miejsc
 
-Strach przed lataniem jest naturalny, ale warto pamiętać, że miliony ludzi codziennie latają bez problemów! 😊" />
+Strach przed lataniem jest naturalny, ale warto pamiętać, że miliony ludzi codziennie latają bez problemów!" />
 
     <FooterSection title="Zostańmy w kontakcie" subTitle="Blog Podróżniczy- zaplanuj z nami wakacje !" />
 
