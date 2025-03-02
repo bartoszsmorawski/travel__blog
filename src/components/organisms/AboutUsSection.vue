@@ -42,9 +42,16 @@ defineProps({
 }
 
 .Title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    color: #4A4A4A;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.subTitle {
+    color: #4A4A4A;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
 .container {
@@ -81,7 +88,7 @@ h2 {
     height: 32px;
 }
 
-.SocialMediaLink{
+.SocialMediaLink {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,6 +101,7 @@ h2 {
 }
 
 p {
+    color: #4A4A4A;
     font-size: 16px;
     line-height: 1.6;
 }
