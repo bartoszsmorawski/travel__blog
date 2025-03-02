@@ -15,6 +15,7 @@ defineProps({
 </script>
 <style scoped>
 .blog {
+  margin-top: 25px;
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -38,7 +39,7 @@ defineProps({
 .blog-title {
   padding: 10px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   color: #333;
 }
 </style>

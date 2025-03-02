@@ -57,7 +57,11 @@ import FooterSection from "@/components/organisms/FooterSection.vue";
 
 <style scoped>
 .ArticlesTitle {
+    color: #4A4A4A;
+    margin-top: 50px;
     text-align: center;
+    font-size: 35px;
+    font-weight: 400;
 }
 
 .ArticleGroup {
@@ -67,5 +71,6 @@ import FooterSection from "@/components/organisms/FooterSection.vue";
     justify-content: center;
     max-width: 1100px;
     margin: 0px auto;
+    margin-bottom: 60px;
 }
 </style>
