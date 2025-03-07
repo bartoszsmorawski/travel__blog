@@ -5,8 +5,9 @@
       <li class="has-submenu">
         <a href="#"> KRAJE I MIEJSCA
           <div class="chevronDownUp">
-            <ChevronDown class="down" color="#4A4A4A" :size="15" />
-            <ChevronUp class="up" color="#4A4A4A" :size="15" />
+            <ChevronDown class="down" color="#F5F5F4" 
+            :size="15" />
+            <ChevronUp class="up" color="#F5F5F4" :size="15" />
           </div>
         </a>
         <ul class="submenu">
@@ -35,8 +36,8 @@
       <li class="has-submenu">
         <a href="#">BLOG
           <div class="chevronDownUp">
-            <ChevronDown class="down" color="#4A4A4A" :size="15" />
-            <ChevronUp class="up" color="#4A4A4A" :size="15" />
+            <ChevronDown class="down" color="#F5F5F4" :size="15" />
+            <ChevronUp class="up" color="#F5F5F4" :size="15" />
           </div>
         </a>
         <ul class="submenu">
@@ -79,9 +80,14 @@ import { ChevronDown, ChevronUp } from 'lucide-vue-next';
 import SearchInput from './SearchInput.vue';
 </script>
 <style scoped>
-/* Podstawowy styl nawigacji */
+
 nav {
-  background-color: #eee;
+  background-color:#00000033;
+  position: fixed;
+  z-index: 10;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
   padding: 0;
 }
 
@@ -94,12 +100,13 @@ nav {
 }
 
 .menu>li {
+  color: #F5F5F4;
   position: relative;
 }
 
 .menu>li>a {
   display: flex;
-  color: #4A4A4A;
+  color: #F5F5F4;
   text-decoration: none;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
