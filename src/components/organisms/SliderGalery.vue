@@ -12,22 +12,20 @@
       </div>
     </div>
     <div class="swiper-pagination"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
   </div>
 </template>
 
 <script setup>
 import { Swiper } from 'swiper';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import { onMounted } from 'vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 
 onMounted(() => {
   new Swiper('.swiper-container', {
-    modules: [Pagination, Navigation], 
+    modules: [Pagination, Autoplay], 
     slidesPerView: 1, 
     spaceBetween: 10,
     loop: true, 
@@ -35,9 +33,9 @@ onMounted(() => {
       el: '.swiper-pagination',
       clickable: true,
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    autoplay: {
+      delay: 10000, 
+      disableOnInteraction: false, 
     },
   });
 });
@@ -46,7 +44,8 @@ onMounted(() => {
 <style scoped>
 .swiper-container {
   width: 100%;
-  height: 500px; 
+  height: 700px; 
+  z-index: 1;
 }
 
 .swiper-slide {
@@ -64,9 +63,7 @@ onMounted(() => {
 
 @media (max-width: 768px) {
   .swiper-container {
-    height: 300px; 
+    height: 400px; 
   }
 }
-
 </style>
-
