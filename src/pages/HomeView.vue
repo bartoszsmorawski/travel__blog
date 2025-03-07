@@ -3,7 +3,7 @@
 
     <SliderGalery />
 
-    <h2 class="ArticlesTitle">Nasze Wpisy</h2>
+    <h2 class="ArticlesTitle">- Nasze Wpisy -</h2>
     <div class="ArticleGroup">
         <ArticleWidget title="Magiczne Zakątki Świata, Które Musisz Odwiedzić" link="https://www.google.pl/"
             :srcImg="require('@/assets/image/giewontPhoto.jpg')" altText="Góry" />
@@ -21,12 +21,12 @@
     <FotoSection title="Wloskie morze, czy warto wybrać się tam na wakacje ?"
         :srcImg="require('@/assets/image/morze.jpg')" altText="Sea" :rightVariantImage="false" description="Morze Włoskie to ogólne określenie na wody otaczające Włochy, czyli Morze Liguryjskie, Tyrreńskie, Jońskie i Adriatyckie. Każde z nich oferuje piękne plaże, lazurową wodę i malownicze wybrzeża.
 Dlaczego warto się tam wybrać?
-✔ Ciepły, śródziemnomorski klimat
-✔ Krystalicznie czysta woda idealna do kąpieli i nurkowania
-✔ Urokliwe nadmorskie miasteczka, jak Amalfi, Cinque Terre czy Rimini
-✔ Bogata kultura, wyśmienita kuchnia i niesamowite widoki
+ Ciepły, śródziemnomorski klimat
+ Krystalicznie czysta woda idealna do kąpieli i nurkowania
+ Urokliwe nadmorskie miasteczka, jak Amalfi, Cinque Terre czy Rimini
+ Bogata kultura, wyśmienita kuchnia i niesamowite widoki
 
-To idealne miejsce na relaks, zwiedzanie i wakacyjne przygody! 🌊☀️" />
+To idealne miejsce na relaks, zwiedzanie i wakacyjne przygody!" />
 
     <AboutUsSection title="Blog podróżniczy Jan Nowak" subTitle="O mnie"
         :srcImg="require('@/assets/image/traveler.jpg')" altText="Traveler picture"
