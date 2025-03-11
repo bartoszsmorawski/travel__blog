@@ -34,7 +34,7 @@ onMounted(() => {
       clickable: true,
     },
     autoplay: {
-      delay: 10000, 
+      delay: 3000, 
       disableOnInteraction: false, 
     },
   });

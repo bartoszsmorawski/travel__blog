@@ -82,7 +82,7 @@ import SearchInput from './SearchInput.vue';
 <style scoped>
 
 nav {
-  background-color:#00000033;
+  background-color:#00000010;
   position: fixed;
   z-index: 10;
   justify-content: space-between;
