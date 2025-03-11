@@ -5,4 +5,4 @@ const routes = [
 
 export function getRoutes() {
     return routes;
-  }
+}
