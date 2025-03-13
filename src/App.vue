@@ -1,15 +1,13 @@
 <template>
+  <TravelNavbar />
   <router-view />
+  <FooterSection title="Zostańmy w kontakcie" subTitle="Blog Podróżniczy- zaplanuj z nami wakacje !" />
 </template>
 
-<script>
+<script setup>
+import TravelNavbar from "@/components/organisms/TravelNavbar.vue";
+import FooterSection from "@/components/organisms/FooterSection.vue";
 import "@fontsource/lato";
-
-
-export default {
-  name: 'App',
-
-};
 </script>
 
 <style>

@@ -3,13 +3,13 @@
     <ul class="menu">
       <li><a href="#">STRONA GÓWNA</a></li>
       <li class="has-submenu">
-        <a href="#"> KRAJE I MIEJSCA
+        <router-link to="/kraje"> KRAJE I MIEJSCA
           <div class="chevronDownUp">
             <ChevronDown class="down" color="#F5F5F4" 
             :size="15" />
             <ChevronUp class="up" color="#F5F5F4" :size="15" />
           </div>
-        </a>
+        </router-link>
         <ul class="submenu">
           <li><a href="#">Austria</a></li>
           <li><a href="#">Chorwacja</a></li>

@@ -1,6 +1,4 @@
 <template>
-    <TravelNavbar />
-
     <SliderGalery />
 
     <h2 class="ArticlesTitle">- Nasze Wpisy -</h2>
@@ -40,19 +38,14 @@ Turbulencje są normalnym zjawiskiem i nie stanowią zagrożenia
 Dzięki lataniu można szybko dotrzeć do wymarzonych miejsc
 
 Strach przed lataniem jest naturalny, ale warto pamiętać, że miliony ludzi codziennie latają bez problemów!" />
-
-    <FooterSection title="Zostańmy w kontakcie" subTitle="Blog Podróżniczy- zaplanuj z nami wakacje !" />
-
 </template>
 
 <script setup>
-import TravelNavbar from "../components/organisms/TravelNavbar.vue";
 import ArticleWidget from "../components/organisms/ArticleWidget.vue";
 import FotoSection from "@/components/organisms/FotoSection.vue";
 import FotoSectionBaner from "@/components/organisms/FotoSectionBaner.vue";
 import AboutUsSection from "@/components/organisms/AboutUsSection.vue";
 import SliderGalery from "@/components/organisms/SliderGalery.vue";
-import FooterSection from "@/components/organisms/FooterSection.vue";
 </script>
 
 <style scoped>
