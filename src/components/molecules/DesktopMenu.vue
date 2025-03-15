@@ -77,10 +77,18 @@
 <script setup>
 import { ChevronDown, ChevronUp } from 'lucide-vue-next';
 import SearchInput from './SearchInput.vue';
+
+
+defineProps({
+  backgroundgcColor: {
+        type: String,
+        default: "#00000010"
+    },
+})
 </script>
 <style scoped>
 nav {
-  background-color: #00000010;
+  background-color: v-bind(backgroundgcColor);
   position: fixed;
   z-index: 10;
   justify-content: space-between;
@@ -88,6 +96,7 @@ nav {
   top: 0;
   padding: 0;
 }
+
 
 .menu {
   list-style: none;
