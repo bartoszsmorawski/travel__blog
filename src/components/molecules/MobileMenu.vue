@@ -12,13 +12,13 @@
         <ul class="menu">
           <li class="menuItems"><a href="#">STRONA GÓWNA</a></li>
           <li class="has-submenu menuItems">
-            <a href="#" @click="() => isOpenSubMenu = !isOpenSubMenu"> KRAJE I MIEJSCA
-              <div class="chevronDownUp">
-                <ChevronDown v-if="!isOpenSubMenu" color="white" :size="25" />
-                <ChevronUp v-else color="white" :size="25" />
-              </div>
-            </a>
-            <!-- TODO BACK HEAR: CREATE COMPONENT FOR SUBMENU ITEMS. -->
+
+            <span @click="() => isOpenSubMenu = !isOpenSubMenu">KRAJE I MIEJSCA
+            <div class="chevronDownUp">
+              <ChevronDown v-if="!isOpenSubMenu" color="white" :size="25" />
+              <ChevronUp v-else color="white" :size="25" />
+            </div>
+            </span>
             <ul v-if="isOpenSubMenu" class="submenu">
               <li><a href="#">Austria</a></li>
               <li><a href="#">Chorwacja</a></li>
@@ -43,12 +43,12 @@
             </ul>
           </li>
           <li class="has-submenu menuItems">
-            <a href="#" @click="() => isOpenSubMenu1 = !isOpenSubMenu1">BLOG
+            <span @click="() => isOpenSubMenu1 = !isOpenSubMenu1">BLOG
               <div class="chevronDownUp">
                 <ChevronDown v-if="!isOpenSubMenu1" color="white" :size="25" />
                 <ChevronUp v-else color="white" :size="25" />
               </div>
-            </a>
+            </span>
             <ul v-if="isOpenSubMenu1" class="submenu">
               <li><a href="#">Wszystkie kraje i miejsca</a></li>
               <li><a href="#">Podróżnicze poradniki</a></li>
@@ -61,12 +61,12 @@
             </ul>
           </li>
           <li class="has-submenu menuItems">
-            <a href="#" @click="() => isOpenSubMenu2 = !isOpenSubMenu2">O NAS
+            <span @click="() => isOpenSubMenu2 = !isOpenSubMenu2">O NAS
               <div class="chevronDownUp">
                 <ChevronDown v-if="!isOpenSubMenu2" color="white" :size="25" />
                 <ChevronUp v-else color="white" :size="25" />
               </div>
-            </a>
+            </span>
             <ul v-if="isOpenSubMenu2" class="submenu">
               <li><a href="#">Kontakt</a></li>
               <li><a href="#">Wspópraca</a></li>
@@ -75,8 +75,8 @@
               <li><a href="#">Nasze linki</a></li>
             </ul>
           </li>
-          <li class="menuItems"><a href="#">WYCIECZKI</a></li>
-          <li class="menuItems"><a href="#">SKLEP</a></li>
+          <li class="menuItems"><router-link to="/wycieczki">WYCIECZKI </router-link></li>
+          <li class="menuItems"><router-link to="/sklep">SKLEP </router-link></li>
         </ul>
       </nav>
     </Transition>
@@ -84,12 +84,12 @@
 </template>
 <script setup>
 import { AlignJustify, X, ChevronDown, ChevronUp } from 'lucide-vue-next';
-import { ref } from "vue"
+import { ref } from "vue";
 import SearchInput from './SearchInput.vue';
-const isOpen = ref(false)
-const isOpenSubMenu = ref(false)
-const isOpenSubMenu1 = ref(false)
-const isOpenSubMenu2 = ref(false)
+const isOpen = ref(false);
+const isOpenSubMenu = ref(false);
+const isOpenSubMenu1 = ref(false);
+const isOpenSubMenu2 = ref(false);
 </script>
 <style scoped>
 .hamburger {
@@ -111,7 +111,7 @@ li {
   margin: 7px 0px;
 }
 
-a {
+a,span {
   color: #fff;
   text-decoration: none;
   width: 100%;
@@ -148,5 +148,4 @@ li a:hover {
 .v-leave-to {
   opacity: 0;
 }
-
 </style>

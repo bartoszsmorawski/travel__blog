@@ -1,47 +1,46 @@
 <template>
   <nav>
     <ul class="menu">
-      <li><a href="#">STRONA GÓWNA</a></li>
+      <li><router-link to="/"><img class="logo" src="@/assets/image/pocztówka-logo-beztla.png"></router-link></li>
       <li class="has-submenu">
-        <router-link to="/kraje"> KRAJE I MIEJSCA
-          <div class="chevronDownUp">
-            <ChevronDown class="down" color="#F5F5F4" 
-            :size="15" />
-            <ChevronUp class="up" color="#F5F5F4" :size="15" />
-          </div>
-        </router-link>
-        <ul class="submenu">
-          <li><a href="#">Austria</a></li>
-          <li><a href="#">Chorwacja</a></li>
-          <li><a href="#">Cypr</a></li>
-          <li><a href="#">Francja</a></li>
-          <li><a href="#">Grecja</a></li>
-          <li><a href="#">Hiszpania</a></li>
-          <li><a href="#">Holandia</a></li>
-          <li><a href="#">Indie</a></li>
-          <li><a href="#">Indonezja</a></li>
-          <li><a href="#">Katar</a></li>
-          <li><a href="#">Korea Poludniowa</a></li>
-          <li><a href="#">Malta</a></li>
-          <li><a href="#">Polska</a></li>
-          <li><a href="#">Szwajcaria</a></li>
-          <li><a href="#">Tajlandia</a></li>
-          <li><a href="#">Tanzania i Zanzibar</a></li>
-          <li><a href="#">Stany Zjednoczone</a></li>
-          <li><a href="#">Wielka Brytania</a></li>
-          <li><a href="#">Wietnam</a></li>
-          <li><a href="#">Wochy</a></li>
-        </ul>
-      </li>
-      <li class="has-submenu">
-        <a href="#">BLOG
+        <span> KRAJE I MIEJSCA
           <div class="chevronDownUp">
             <ChevronDown class="down" color="#F5F5F4" :size="15" />
             <ChevronUp class="up" color="#F5F5F4" :size="15" />
           </div>
-        </a>
+        </span>
         <ul class="submenu">
-          <li><a href="#">Wszystkie kraje i miejsca</a></li>
+          <li><router-link to="/npAustria">Austria</router-link></li>
+          <li><router-link to="/npAustria">Chorwacja</router-link></li>
+          <li><router-link to="/npAustria">Cypr</router-link></li>
+          <li><router-link to="/npAustria">Francja</router-link></li>
+          <li><router-link to="/npAustria">Grecja</router-link></li>
+          <li><router-link to="/npAustria">Hiszpania</router-link></li>
+          <li><router-link to="/npAustria">Holandia</router-link></li>
+          <li><router-link to="/npAustria">Indie</router-link></li>
+          <li><router-link to="/npAustria">Indonezja</router-link></li>
+          <li><router-link to="/npAustria">Katar</router-link></li>
+          <li><router-link to="/npAustria">Korea Poludniowa</router-link></li>
+          <li><router-link to="/npAustria">Malta</router-link></li>
+          <li><router-link to="/npAustria">Polska</router-link></li>
+          <li><router-link to="/npAustria">Szwajcaria</router-link></li>
+          <li><router-link to="/npAustria">Tajlandia</router-link></li>
+          <li><router-link to="/npAustria">Tanzania i Zanzibar</router-link></li>
+          <li><router-link to="/npAustria">Stany Zjednoczone</router-link></li>
+          <li><router-link to="/npAustria">Wielka Brytania</router-link></li>
+          <li><router-link to="/npAustria">Wietnam</router-link></li>
+          <li><router-link to="/npAustria">Wochy</router-link></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <span>BLOG
+          <div class="chevronDownUp">
+            <ChevronDown class="down" color="#F5F5F4" :size="15" />
+            <ChevronUp class="up" color="#F5F5F4" :size="15" />
+          </div>
+        </span>
+        <ul class="submenu">
+          <li><router-link to="/kraje">Wszystkie kraje i miejsca</router-link></li>
           <li><a href="#">Podróżnicze poradniki</a></li>
           <li><a href="#">Blogi z podróży</a></li>
           <li><a href="#">Co warto zobaczyc</a></li>
@@ -52,12 +51,12 @@
         </ul>
       </li>
       <li class="has-submenu">
-        <a href="#">O NAS
+        <span>O NAS
           <div class="chevronDownUp">
-            <ChevronDown class="down" color="#4A4A4A" :size="15" />
-            <ChevronUp class="up" color="#4A4A4A" :size="15" />
+            <ChevronDown class="down" color="#F5F5F4" :size="15" />
+            <ChevronUp class="up" color="#F5F5F4" :size="15" />
           </div>
-        </a>
+        </span>
         <ul class="submenu">
           <li><a href="#">Kontakt</a></li>
           <li><a href="#">Wspópraca</a></li>
@@ -66,8 +65,8 @@
           <li><a href="#">Nasze linki</a></li>
         </ul>
       </li>
-      <li><a href="#">WYCIECZKI</a></li>
-      <li><a href="#">SKLEP</a></li>
+      <li> <router-link to="/wycieczki">WYCIECZKI </router-link></li>
+      <li> <router-link to="/sklep">SKLEP </router-link></li>
       <li>
         <SearchInput />
       </li>
@@ -80,9 +79,8 @@ import { ChevronDown, ChevronUp } from 'lucide-vue-next';
 import SearchInput from './SearchInput.vue';
 </script>
 <style scoped>
-
 nav {
-  background-color:#00000010;
+  background-color: #00000010;
   position: fixed;
   z-index: 10;
   justify-content: space-between;
@@ -100,11 +98,13 @@ nav {
 }
 
 .menu>li {
+  display: flex;
   color: #F5F5F4;
   position: relative;
 }
 
-.menu>li>a {
+.menu>li>a,
+.menu>li>span {
   display: flex;
   color: #F5F5F4;
   text-decoration: none;
@@ -117,6 +117,11 @@ nav {
 .menu>li:hover {
   background-color: #555;
 }
+
+.menu>li:first-child:hover {
+  background-color: unset;
+}
+
 
 .chevronDownUp {
   align-items: center;
@@ -167,5 +172,10 @@ nav {
 
 .menu li:hover .down {
   display: none;
+}
+
+.logo {
+  max-width: 250px;
+
 }
 </style>
