@@ -1,7 +1,7 @@
 <template>
   <nav>
     <ul class="menu">
-      <li><router-link to="/"><img class="logo" src="@/assets/image/pocztówka-logo-beztla.png"></router-link></li>
+      <li><router-link to="/"><img class="logo" src="@/assets/image/logo-pocztówka-white.png"></router-link></li>
       <li class="has-submenu">
         <span> KRAJE I MIEJSCA
           <div class="chevronDownUp">
