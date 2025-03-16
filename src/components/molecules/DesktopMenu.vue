@@ -50,21 +50,7 @@
           <li><a href="#">Sprzęt w podróży</a></li>
         </ul>
       </li>
-      <li class="has-submenu">
-        <span>O NAS
-          <div class="chevronDownUp">
-            <ChevronDown class="down" color="#F5F5F4" :size="15" />
-            <ChevronUp class="up" color="#F5F5F4" :size="15" />
-          </div>
-        </span>
-        <ul class="submenu">
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Wspópraca</a></li>
-          <li><a href="#">Nasz YouTube</a></li>
-          <li><a href="#">O nas</a></li>
-          <li><a href="#">Nasze linki</a></li>
-        </ul>
-      </li>
+      <li> <router-link to="/onas">O NAS</router-link> </li>
       <li> <router-link to="/wycieczki">WYCIECZKI </router-link></li>
       <li> <router-link to="/sklep">SKLEP </router-link></li>
       <li>
@@ -81,10 +67,10 @@ import SearchInput from './SearchInput.vue';
 
 defineProps({
   backgroundgcColor: {
-        type: String,
-        default: "#00000010"
-    },
-})
+    type: String,
+    default: "#00000010"
+  },
+});
 </script>
 <style scoped>
 nav {
