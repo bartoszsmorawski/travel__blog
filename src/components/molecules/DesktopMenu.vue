@@ -10,26 +10,26 @@
           </div>
         </span>
         <ul class="submenu">
-          <li><router-link to="/npAustria">Austria</router-link></li>
-          <li><router-link to="/npAustria">Chorwacja</router-link></li>
-          <li><router-link to="/npAustria">Cypr</router-link></li>
-          <li><router-link to="/npAustria">Francja</router-link></li>
-          <li><router-link to="/npAustria">Grecja</router-link></li>
-          <li><router-link to="/npAustria">Hiszpania</router-link></li>
-          <li><router-link to="/npAustria">Holandia</router-link></li>
-          <li><router-link to="/npAustria">Indie</router-link></li>
-          <li><router-link to="/npAustria">Indonezja</router-link></li>
-          <li><router-link to="/npAustria">Katar</router-link></li>
-          <li><router-link to="/npAustria">Korea Poludniowa</router-link></li>
-          <li><router-link to="/npAustria">Malta</router-link></li>
-          <li><router-link to="/npAustria">Polska</router-link></li>
-          <li><router-link to="/npAustria">Szwajcaria</router-link></li>
-          <li><router-link to="/npAustria">Tajlandia</router-link></li>
-          <li><router-link to="/npAustria">Tanzania i Zanzibar</router-link></li>
-          <li><router-link to="/npAustria">Stany Zjednoczone</router-link></li>
-          <li><router-link to="/npAustria">Wielka Brytania</router-link></li>
-          <li><router-link to="/npAustria">Wietnam</router-link></li>
-          <li><router-link to="/npAustria">Wochy</router-link></li>
+          <li><router-link to="/kraje/Austria">Austria</router-link></li>
+          <li><router-link to="/kraje/Chorwacja">Chorwacja</router-link></li>
+          <li><router-link to="/kraje/Cypr">Cypr</router-link></li>
+          <li><router-link to="/kraje/Francja">Francja</router-link></li>
+          <li><router-link to="/kraje/Grecja">Grecja</router-link></li>
+          <li><router-link to="/kraje/Hiszpania">Hiszpania</router-link></li>
+          <li><router-link to="/kraje/Holandia">Holandia</router-link></li>
+          <li><router-link to="/kraje/Indie">Indie</router-link></li>
+          <li><router-link to="/kraje/Indonezja">Indonezja</router-link></li>
+          <li><router-link to="/kraje/Katar">Katar</router-link></li>
+          <li><router-link to="/kraje/Korea-Poludniowa">Korea Poludniowa</router-link></li>
+          <li><router-link to="/kraje/Malta">Malta</router-link></li>
+          <li><router-link to="/kraje/Polska">Polska</router-link></li>
+          <li><router-link to="/kraje/Szwajcaria">Szwajcaria</router-link></li>
+          <li><router-link to="/kraje/Tajlandia">Tajlandia</router-link></li>
+          <li><router-link to="/kraje/Tanzania-i-Zanzibar">Tanzania i Zanzibar</router-link></li>
+          <li><router-link to="/kraje/Stany-Zjednoczone">Stany Zjednoczone</router-link></li>
+          <li><router-link to="/kraje/Wielka-Brytania">Wielka Brytania</router-link></li>
+          <li><router-link to="/kraje/Wietnam">Wietnam</router-link></li>
+          <li><router-link to="/kraje/Wochy">Wochy</router-link></li>
         </ul>
       </li>
       <li class="has-submenu">

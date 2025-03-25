@@ -1,0 +1,67 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"title": "Magiczne Zakątki Świata, Które Musisz Odwiedzić",
+			"imageLink": "https://archeo.uj.edu.pl/documents/11321345/153696767/zakopane300_230.jpg/e4f61d11-0d5a-4c79-8b7e-02177f8d97db?t=1686070970285",
+			"content": "",
+			"coutry": "Polska"
+		},
+		{
+			"id": 2,
+			"title": "Przygoda Życia: Najlepsze Miejsca na Twój Następny Wyjazd",
+			"imageLink": "https://metrohouse.pl/ckfinder/userfiles/files/blogKW/Karolina/grafiki/blog/blog1.jpg",
+			"content": "",
+			"coutry": "Polska"
+		},
+		{
+			"id": 3,
+			"title": "Sekrety Udanych Podróży: Inspiracje i Porady dla Odkrywców",
+			"imageLink": "https://www.etsyexplores.com/a-travellers-guide-to-visiting-santa-ponsa/",
+			"content": "",
+			"coutry": "Polska"
+		},
+		{
+			"id": 4,
+			"title": "Od Plaż po Góry: Różnorodne Kierunki na Idealne Wakacje",
+			"imageLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUBTRTUaS_Sj7K0SFeUGk9Jq6DzOixVw663usHzOQBdkuKqWr",
+			"content": "",
+			"coutry": "Asutria"
+		},
+		{
+			"id": 5,
+			"title": "Podróże Blisko i Daleko: Niezapomniane Destynacje na Każdy Budżet",
+			"imageLink": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoV75hkOBWipRUnu-uz5d2EW3RSEng90QLBLT5kNRPiTY030A5",
+			"content": "",
+			"coutry": "Asutria"
+		},
+		{
+			"id": 6,
+			"title": "Kultura, Przyroda i Adrenalina: Wybierz Swój Styl Podróżowania",
+			"imageLink": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz_gMfaDXuebfWD2X4bL8grO_6gIYs-vbhkaiWc1JqDsMz94tQ",
+			"content": "",
+			"coutry": "Asutria"
+		},
+		{
+			"id": 7,
+			"title": "Jak spakować bagaż podręczny? To zabierz… a o tym lepiej zapomnij!!",
+			"imageLink": "https://podrozniczy.blog/wp-content/uploads/2025/02/jak-spakowac-walizke-podreczna-300x225.jpg.webp",
+			"content": "",
+			"coutry": "Polska"
+		},
+		{
+			"id": 8,
+			"title": "Co robić na Bali? Wschód słońca z widokiem na wulkan…",
+			"imageLink": "https://podrozniczy.blog/wp-content/uploads/2024/11/co-robic-na-Bali-atrakcje-300x225.jpg.webp",
+			"content": "",
+			"coutry": "Polska"
+		},
+		{
+			"id": 9,
+			"title": "Tokio na własną rękę, prostsze i tańsze niż myślisz!",
+			"imageLink": "https://podrozniczy.blog/wp-content/uploads/2024/12/Tokio-na-wlasna-reke-bez-biura-300x225.jpg.webp",
+			"content": "",
+			"coutry": "Polska"
+		}
+	]
+}
