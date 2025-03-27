@@ -1,37 +1,15 @@
 <template>
   <TravelNavbar backgroundgcColor="#4A4A4A" />
   <div class="article-page">
-    <h1 class="title">- Porozmawiajmy o Austrii -</h1>
+    <h1 class="title">- Porozmawiajmy o krajach: {{ route.params.country }} -</h1>
     <h2 class="subTitle">Czyli co warto wiedzieć o tym kraju ?</h2>
 
-    <div class="article-container">
-      <img class="article-img" src="@/assets/image/wpis1.jpg">
-      <div>
-        <h3 class="article-title">Atrakcje turystyczne Wiednia. Top 9 miejsc, które Cię zachwycą</h3>
-        <p class="article-content">Wiedeń, co warto zobaczyć odwiedzając to miasto na weekend Wiedeń atrakcje
-          turystyczne-
-          czyli dzisiaj o tym co
-          warto zobaczyć w Wiedniu, wybierając się tam na weekend. Wiedeń : stolica i jednocześnie największe miasto w
-          Austrii. Liczące około 1.8 mln ludzi miasto jest jednym z najchętniej odwiedzanych miast w Europie. Centrum
-          muzyki
-          klasycznej : to tu tworzyli Mozart, Beethoven, Schubert i wielu innym wirtuozów. Wiedeń przez niektórych
-          nazywany
-          „Miastem Marzeń” bo...</p>
-        <a href="#" class="read-more">Czytaj dalej »</a>
-      </div>
+    <div v-if="articlesForCountry.length">
+      <ArticlePreview v-for="country in articlesForCountry" :key="country.id" :title="country.title" content=""
+        :imageSrc="country.imageLink" />
     </div>
-
-    <div class="article-container">
-      <img class="article-img" src="@/assets/image/wpis2.jpg">
-      <div>
-        <h3 class="article-title">Salzburg : miasto Mozarta, historii i bajkowych widoków</h3>
-        <p class="article-content">Salzburg to jedno z najpiękniejszych miast Austrii, położone u podnóża Alp, nad rzeką
-          Salzach. Znane jako miejsce narodzin Wolfganga Amadeusza Mozarta, łączy w sobie bogatą historię, kulturę oraz
-          wyjątkową architekturę.Historia Salzburga sięga czasów rzymskich, kiedy funkcjonowało tu miasto Juvavum. W
-          średniowieczu stał się ważnym ośrodkiem religijnym i handlowym, a swoje bogactwo zawdzięczał wydobyciu soli,
-          nazywanej „białym złotem”. To...</p>
-        <a href="#" class="read-more">Czytaj dalej »</a>
-      </div>
+    <div v-else>
+      <p>Brak artykułów dotyczących tego kraju.</p>
     </div>
 
     <div class="article-info">
@@ -118,8 +96,16 @@
 
 <script setup>
 import TravelNavbar from '@/components/organisms/TravelNavbar.vue';
+import ArticlePreview from '@/components/molecules/ArticlePreview.vue';
+import { computed } from 'vue';
 
+import { useRoute } from 'vue-router';
+const route = useRoute();
 
+import { useArticles } from "@/comosables/useArticles";
+const { getArticlesByCountry } = useArticles();
+
+const articlesForCountry = computed(() => getArticlesByCountry(route.params.country).value);
 </script>
 <style scoped>
 .article-page {
@@ -143,32 +129,13 @@ import TravelNavbar from '@/components/organisms/TravelNavbar.vue';
   margin-top: 15px;
 }
 
-.article-container {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  margin-top: 80px;
-  margin-bottom: 20px;
-}
 
 .article-img {
   width: 30%;
   border-radius: 8px;
 }
 
-.article-title {
-  color: #333;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
 
-.article-content {
-  font-size: 1rem;
-  color: #333;
-}
 
 .read-more {
   color: #333;
@@ -180,5 +147,4 @@ import TravelNavbar from '@/components/organisms/TravelNavbar.vue';
 .article-info {
   padding: 16px;
 }
-
 </style>
