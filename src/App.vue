@@ -19,7 +19,22 @@ import "@fontsource/lato";
 }
 
 body {
-  background: #F5F5F4;
+  background:  #FFFFFF;
   margin: 0px;
+}
+
+::-webkit-scrollbar-track {
+  width: 2px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  background-color: #323232;
 }
 </style>

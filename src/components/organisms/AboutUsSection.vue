@@ -1,5 +1,5 @@
 <template>
-    <section class="AboutUsSection">
+    <section class="AboutUsSection animate">
         <div class="container">
             <div class="image">
                 <img :src="srcImg" :alt="altText" />
@@ -39,6 +39,11 @@ defineProps({
     max-width: 900px;
     margin: 0 auto;
     padding: 50px;
+    transition: all 0.3s linear;
+}
+
+.AboutUsSection.active {
+    transform: scale(0.7);
 }
 
 .Title {

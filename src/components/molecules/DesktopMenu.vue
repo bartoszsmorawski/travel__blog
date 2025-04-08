@@ -9,28 +9,30 @@
             <ChevronUp class="up" color="#F5F5F4" :size="15" />
           </div>
         </span>
-        <ul class="submenu">
-          <li><router-link to="/kraje/Austria">Austria</router-link></li>
-          <li><router-link to="/kraje/Chorwacja">Chorwacja</router-link></li>
-          <li><router-link to="/kraje/Cypr">Cypr</router-link></li>
-          <li><router-link to="/kraje/Francja">Francja</router-link></li>
-          <li><router-link to="/kraje/Grecja">Grecja</router-link></li>
-          <li><router-link to="/kraje/Hiszpania">Hiszpania</router-link></li>
-          <li><router-link to="/kraje/Holandia">Holandia</router-link></li>
-          <li><router-link to="/kraje/Indie">Indie</router-link></li>
-          <li><router-link to="/kraje/Indonezja">Indonezja</router-link></li>
-          <li><router-link to="/kraje/Katar">Katar</router-link></li>
-          <li><router-link to="/kraje/Korea-Poludniowa">Korea Poludniowa</router-link></li>
-          <li><router-link to="/kraje/Malta">Malta</router-link></li>
-          <li><router-link to="/kraje/Polska">Polska</router-link></li>
-          <li><router-link to="/kraje/Szwajcaria">Szwajcaria</router-link></li>
-          <li><router-link to="/kraje/Tajlandia">Tajlandia</router-link></li>
-          <li><router-link to="/kraje/Tanzania-i-Zanzibar">Tanzania i Zanzibar</router-link></li>
-          <li><router-link to="/kraje/Stany-Zjednoczone">Stany Zjednoczone</router-link></li>
-          <li><router-link to="/kraje/Wielka-Brytania">Wielka Brytania</router-link></li>
-          <li><router-link to="/kraje/Wietnam">Wietnam</router-link></li>
-          <li><router-link to="/kraje/Wochy">Wochy</router-link></li>
-        </ul>
+        <div class="submenu-container">
+          <ul class="submenu">
+            <li><router-link to="/kraje/Austria">Austria</router-link></li>
+            <li><router-link to="/kraje/Chorwacja">Chorwacja</router-link></li>
+            <li><router-link to="/kraje/Cypr">Cypr</router-link></li>
+            <li><router-link to="/kraje/Francja">Francja</router-link></li>
+            <li><router-link to="/kraje/Grecja">Grecja</router-link></li>
+            <li><router-link to="/kraje/Hiszpania">Hiszpania</router-link></li>
+            <li><router-link to="/kraje/Holandia">Holandia</router-link></li>
+            <li><router-link to="/kraje/Indie">Indie</router-link></li>
+            <li><router-link to="/kraje/Indonezja">Indonezja</router-link></li>
+            <li><router-link to="/kraje/Katar">Katar</router-link></li>
+            <li><router-link to="/kraje/Korea-Poludniowa">Korea Poludniowa</router-link></li>
+            <li><router-link to="/kraje/Malta">Malta</router-link></li>
+            <li><router-link to="/kraje/Polska">Polska</router-link></li>
+            <li><router-link to="/kraje/Szwajcaria">Szwajcaria</router-link></li>
+            <li><router-link to="/kraje/Tajlandia">Tajlandia</router-link></li>
+            <li><router-link to="/kraje/Tanzania-i-Zanzibar">Tanzania i Zanzibar</router-link></li>
+            <li><router-link to="/kraje/Stany-Zjednoczone">Stany Zjednoczone</router-link></li>
+            <li><router-link to="/kraje/Wielka-Brytania">Wielka Brytania</router-link></li>
+            <li><router-link to="/kraje/Wietnam">Wietnam</router-link></li>
+            <li><router-link to="/kraje/Wochy">Wochy</router-link></li>
+          </ul>
+        </div>
       </li>
       <li class="has-submenu">
         <span>BLOG
@@ -122,7 +124,11 @@ nav {
   align-items: center;
 }
 
-/* Styl podmenu */
+.submenu-container {
+  max-height: 200px;
+  overflow: hidden;
+}
+
 .submenu {
   list-style: none;
   margin: 0;
@@ -132,9 +138,8 @@ nav {
   left: 0;
   background-color: #4444447a;
   display: none;
-  max-height: 80vh;
+  max-height: 250px;
   overflow-y: scroll;
-  /* Ukryte domyślnie */
 }
 
 .submenu li {
