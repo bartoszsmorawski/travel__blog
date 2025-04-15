@@ -4,15 +4,16 @@
     <h1 class="title">- Kraje i miejsca -</h1>
     <h2 class="subTitle">Czyli dlaczego warto zwiedzać świat ?</h2>
   </div>
-  <ThreeColumnsPhotosBanner />
-  <SaleBigBaner />
+  <LinksToArticle />
+  <PaginationToPage />
 </template>
 
 <script setup>
+import PaginationToPage from '@/components/molecules/PaginationToPage.vue';
+import LinksToArticle from '@/components/organisms/LinksToArticle.vue';
 import TravelNavbar from '@/components/organisms/TravelNavbar.vue';
-import SaleBigBaner from '@/components/organisms/SaleBigBaner.vue';
-import ThreeColumnsPhotosBanner from '@/components/organisms/ThreeColumnsPhotosBanner.vue';
 </script>
+
 <style scoped>
 .article-page {
   margin-top: 80px;

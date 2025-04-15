@@ -1,5 +1,5 @@
 <template>
-    <section class="FotoBaner">
+    <section class="FotoBaner fade-down animate">
         <h2 class="Title">{{ title }}</h2>
         <p class="Description">{{ description }}</p>
         <BasicButton  buttonColor="#f5f5f4c4" color="#4A4A4A" buttonText="Kliknij tutaj !"/>
@@ -8,7 +8,7 @@
 </template>
 <script setup>
 import { computed } from 'vue';
-import BasicButton from '../molecules/BasicButton.vue';
+import BasicButton from '@/components/molecules/BasicButton.vue';
 
 const props = defineProps({
     title: String,

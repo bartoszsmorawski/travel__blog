@@ -1,8 +1,7 @@
 import HomeView from '../pages/HomeView.vue';
-import CountriesView from '../pages/CountriesView.vue';
+import CountriesView from '../pages/AllCountries&Places.vue';
 // import CountryView from '../pages/CountryView.vue';
 import CountryArticlesView from '../pages/CountryArticlesView.vue';
-import BlogView from '../pages/BlogView.vue';
 import AboutUsView from '../pages/AboutUsView.vue';
 import TravelView from '../pages/TravelView.vue';
 import ShopView from '../pages/ShopView.vue';
@@ -13,7 +12,6 @@ const routes = [
 	{ path: '/sklep', component: ShopView, meta: { title: 'Sklep' } },
 	{ path: '/kraje', component: CountriesView, meta: { title: 'Kraje' } },
 	{ path: '/kraje/:country', component: CountryArticlesView },
-	{ path: '/blog', component: BlogView, meta: { title: 'Blog' } },
 	{ path: '/onas', component: AboutUsView, meta: { title: 'O nas' } },
 ];
 

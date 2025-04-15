@@ -5,7 +5,7 @@
         <ArticleWidget v-for="article in getLatestArticles" :key="article.id" :title="article.title"
             link="https://www.google.pl/" :srcImg="article.imageLink" altText="Góry" />
     </div>
-    <FotoSection title="Wloskie morze, czy warto wybrać się tam na wakacje ?"
+    <ArticleTeaser title="Wloskie morze, czy warto wybrać się tam na wakacje ?"
         :srcImg="require('@/assets/image/morze.jpg')" altText="Sea" :rightVariantImage="false" description="Morze Włoskie to ogólne określenie na wody otaczające Włochy, czyli Morze Liguryjskie, Tyrreńskie, Jońskie i Adriatyckie. Każde z nich oferuje piękne plaże, lazurową wodę i malownicze wybrzeża.
 Dlaczego warto się tam wybrać?
  Ciepły, śródziemnomorski klimat
@@ -19,7 +19,8 @@ To idealne miejsce na relaks, zwiedzanie i wakacyjne przygody!" />
         :srcImg="require('@/assets/image/traveler.jpg')" altText="Traveler picture"
         description="Podróżowanie to moja pasja i sposób na życie. Uwielbiam odkrywać nowe miejsca, poznawać lokalne kultury i smakować tradycyjne potrawy. Każda podróż to dla mnie nie tylko przygoda, ale też okazja do nauki i poszerzania horyzontów. Na mojej stronie dzielę się relacjami z wypraw, praktycznymi poradami i inspiracjami, które pomogą Ci zaplanować własne podróże. Świat jest pełen niezwykłych miejsc chodź, odkryjmy je razem!" />
 
-    <FotoSectionBaner title="Podróż samolotem" :srcImg="require('@/assets/image/morze.jpg')" altText="Sea" description="Podróż samolotem to szybki i wygodny sposób przemieszczania się na duże odległości. Po starcie można podziwiać widoki z okna, a lot często przebiega spokojnie i komfortowo. Dzięki nowoczesnym technologiom podróże lotnicze są dobrze zorganizowane i bezpieczne.
+    <ArticleTeaserBaner title="Podróż samolotem" :srcImg="require('@/assets/image/morze.jpg')" altText="Sea"
+        description="Podróż samolotem to szybki i wygodny sposób przemieszczania się na duże odległości. Po starcie można podziwiać widoki z okna, a lot często przebiega spokojnie i komfortowo. Dzięki nowoczesnym technologiom podróże lotnicze są dobrze zorganizowane i bezpieczne.
 Dlaczego nie warto się bać latania?
 Samoloty to jeden z najbezpieczniejszych środków transportu
 Piloci są świetnie wyszkoleni i doświadczeni
@@ -30,14 +31,22 @@ Strach przed lataniem jest naturalny, ale warto pamiętać, że miliony ludzi co
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
+
 import ArticleWidget from "../components/organisms/ArticleWidget.vue";
-import FotoSection from "@/components/organisms/FotoSection.vue";
-import FotoSectionBaner from "@/components/organisms/FotoSectionBaner.vue";
+import ArticleTeaser from "@/components/organisms/ArticleTeasers/ArticleTeaser.vue";
 import AboutUsSection from "@/components/organisms/AboutUsSection.vue";
 import SliderGalery from "@/components/organisms/SliderGalery.vue";
+import ArticleTeaserBaner from '@/components/organisms/ArticleTeasers/ArticleTeaserBaner.vue';
+
 import { useArticles } from "@/comosables/useArticles";
+import { useAnimations } from "@/comosables/useAnimations";
 
 const { getLatestArticles } = useArticles();
+
+onMounted(() => {
+    useAnimations();
+});
 </script>
 
 <style scoped>

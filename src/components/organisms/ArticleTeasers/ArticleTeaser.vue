@@ -3,17 +3,21 @@
         <div class="Content">
             <h2 class="Title">{{ title }}</h2>
             <p class="Description">{{ description }}</p>
-            <BasicButton buttonText="Wiecej informacji..." />
+            <BasicButton v-if="basicButton" buttonText="Wiecej informacji..." />
         </div>
         <div class="Image"><img :src="srcImg" :alt="altText" class="blog-image" /></div>
     </section>
 </template>
 <script setup>
 import { computed } from 'vue';
-import BasicButton from '../molecules/BasicButton.vue';
+import BasicButton from '@/components/molecules/BasicButton.vue';
 
 const props = defineProps({
     rightVariantImage: {
+        type: Boolean,
+        default: true
+    },
+    basicButton: {
         type: Boolean,
         default: true
     },
@@ -21,8 +25,8 @@ const props = defineProps({
     description: String,
     srcImg: String,
     altText: String,
-})
-const backgroundColorValue = computed(() => props.rightVariantImage ? '#fff' : '#eee');
+});
+const backgroundColorValue = computed(() => props.rightVariantImage ? '#fff' : '#F8F9FA');
 const flexDirectionValue = computed(() => props.rightVariantImage ? 'row' : 'row-reverse');
 const paddingValue = computed(() => props.rightVariantImage ? '0px 0px 0px 50px' : '0px 50px 0px 0px');
 </script>

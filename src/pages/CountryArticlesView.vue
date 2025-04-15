@@ -7,7 +7,7 @@
       <BasicInformationCountry />
     </div>
     <div v-if="articlesForCountry.length">
-      <ArticlePreview v-for="country in articlesForCountry" :key="country.id" :title="country.title" content=""
+      <ArticleTeaserBorder v-for="country in articlesForCountry" :key="country.id" :title="country.title" content=""
         :imageSrc="country.imageLink" />
     </div>
     <div v-else>
@@ -18,7 +18,6 @@
 
 <script setup>
 import TravelNavbar from '@/components/organisms/TravelNavbar.vue';
-import ArticlePreview from '@/components/molecules/ArticlePreview.vue';
 import BasicInformationCountry from '@/components/organisms/BasicInformationCountry.vue';
 import { computed } from 'vue';
 
@@ -26,6 +25,7 @@ import { useRoute } from 'vue-router';
 const route = useRoute();
 
 import { useArticles } from "@/comosables/useArticles";
+import ArticleTeaserBorder from '@/components/organisms/ArticleTeasers/ArticleTeaserBorder.vue';
 const { getArticlesByCountry } = useArticles();
 
 const articlesForCountry = computed(() => getArticlesByCountry(route.params.country).value);

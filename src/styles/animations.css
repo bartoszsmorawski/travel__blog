@@ -1,0 +1,89 @@
+/* Animacja od dolu*/
+
+/* stan poczatkowy, pierwsza klatka */
+.fade-down {
+	opacity: 0;
+
+    /* to sprawia ze element jest przesuniety, tu o 300 px w dol */
+	transform: translateY(300px);
+
+    /* to animuje cala droge */
+	transition: all 0.5s ease;
+}
+
+/* stan koncowy, ostatnia klatka */
+.fade-down.active {
+	opacity: 1;
+
+    /* to sprawia ze element jest przesuniety, tu wcale bo ma 0 px, czyli jest na swojej normalnej pozycji */
+	transform: translateY(0px);
+}
+
+/* Animacja od lewej*/
+
+.fade-left {
+	opacity: 0;
+	transform: translateX(-300px);
+	transition: all 0.5s ease;
+}
+
+.fade-left.active {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Animacja od prawej*/
+
+.fade-right {
+	opacity: 0;
+	transform: translateX(300px);
+	transition: all 0.5s ease;
+}
+
+.fade-right.active {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Animacja od góry*/
+
+.fade-up {
+	opacity: 0;
+	transform: translateY(300px);
+	transition: all 0.5s ease;
+}
+
+.fade-up.active {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
+/* Efekt Zoom* - Chat gpt*/
+
+.zoom-in {
+	opacity: 0;
+	transform: scale(0.8);
+	transition: all 0.5s ease;
+}
+
+.zoom-in.active {
+	opacity: 1;
+	transform: scale(1);
+}
+
+
+/* Efekt Rotacja - Chat gpt*/
+
+.rotate-in {
+	opacity: 0;
+	transform: rotate(-10deg) scale(0.95);
+	transition: all 0.5s ease;
+}
+
+.rotate-in.active {
+	opacity: 1;
+	transform: rotate(0deg) scale(1);
+}
+
+

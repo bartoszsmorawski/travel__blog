@@ -8,6 +8,7 @@
 import TravelNavbar from "@/components/organisms/TravelNavbar.vue";
 import FooterSection from "@/components/organisms/FooterSection.vue";
 import "@fontsource/lato";
+import "@/styles/animations.css";
 </script>
 
 <style>
@@ -19,7 +20,7 @@ import "@fontsource/lato";
 }
 
 body {
-  background:  #FFFFFF;
+  background: #FFFFFF;
   margin: 0px;
 }
 

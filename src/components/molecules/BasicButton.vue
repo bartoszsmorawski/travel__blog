@@ -1,3 +1,5 @@
+//Ogólny przycisk dodawany na strone
+
 <template>
     <button class="Button">{{ buttonText }}</button>
 </template>
@@ -27,4 +29,3 @@ defineProps({
     margin: 10px;
 }
 </style>
-
