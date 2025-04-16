@@ -28,6 +28,7 @@ defineProps({
 });
 </script>
 <style scoped>
+
 .Footer{
     background-color: #F5F5F4;
     margin-top: 50px;
@@ -125,5 +126,11 @@ defineProps({
     color: #4A4A4A;
     font-size: 18px;
     font-weight: normal;
+}
+
+@media(max-width: 576px) {
+    .Title {
+        text-align: center;
+    }
 }
 </style>
