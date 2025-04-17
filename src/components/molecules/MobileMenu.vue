@@ -14,10 +14,10 @@
           <li class="has-submenu menuItems">
 
             <span @click="() => isOpenSubMenu = !isOpenSubMenu">KRAJE I MIEJSCA
-            <div class="chevronDownUp">
-              <ChevronDown v-if="!isOpenSubMenu" color="white" :size="25" />
-              <ChevronUp v-else color="white" :size="25" />
-            </div>
+              <div class="chevronDownUp">
+                <ChevronDown v-if="!isOpenSubMenu" color="white" :size="25" />
+                <ChevronUp v-else color="white" :size="25" />
+              </div>
             </span>
             <ul v-if="isOpenSubMenu" class="submenu">
               <li><a href="#">Austria</a></li>
@@ -92,6 +92,10 @@ const isOpenSubMenu1 = ref(false);
 const isOpenSubMenu2 = ref(false);
 </script>
 <style scoped>
+
+.MobileNavbar{
+  position: fixed;
+}
 .hamburger {
   border: none;
   background-color: #000000;
@@ -111,7 +115,8 @@ li {
   margin: 7px 0px;
 }
 
-a,span {
+a,
+span {
   color: #fff;
   text-decoration: none;
   width: 100%;

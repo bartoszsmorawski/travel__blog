@@ -1,3 +1,6 @@
+//Dzięki tej funkcji zawartej w tym pliku możemy podstawiać różne animacje. Trzeba używać klasy "animate" przed aby działały inne znajdujące się w animation.css
+
+
 export function useAnimations() {
     const elementsToObservate = document.querySelectorAll('.animate');
 

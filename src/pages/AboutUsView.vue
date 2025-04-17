@@ -13,14 +13,16 @@ Podróżowanie to dla mnie coś więcej niż hobby – to styl życia, sposób n
 
 Na Pocztówkach ze świata dzielę się moimi doświadczeniami, praktycznymi poradami oraz ciekawostkami, które mogą zainspirować Cię do własnych podróży. Czy wiesz, że w Japonii istnieje wyspa zamieszkana wyłącznie przez koty? A może słyszałeś o wiosce w Norwegii, gdzie słońce nie zachodzi przez kilka miesięcy? To tylko niektóre z niesamowitych miejsc, które miałem okazję odwiedzić!" />
 
+  <FormSection />
+
 </template>
 
 <script setup>
 import TravelNavbar from '@/components/organisms/TravelNavbar.vue';
 import AboutUsSection from "@/components/organisms/AboutUsSection.vue";
+import FormSection from '@/components/organisms/FormSection.vue';
 </script>
 <style scoped>
-
 .title-aboutUs {
   text-align: center;
   font-size: 40px;
