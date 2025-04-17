@@ -1,3 +1,5 @@
+// Ten plik zawiera style oraz informacje widgetu artykułu. Ten widget znajduje się na stronie głównej w sekcji nasze wpisy. Jest to pjedynczy obiekt.
+
 <template>
   <div class="blog">
     <a :href="link" class="blog-link"> <img :src="srcImg" :alt="altText" class="blog-image" />

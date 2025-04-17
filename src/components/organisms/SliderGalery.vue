@@ -1,3 +1,5 @@
+// Ten plik odpowiada za sekcje karuzeli, która znajduje się na stronie głównej. Dzięki temu ten plik zmienia slajdy i nadaje mu style. 
+
 <template>
   <div class="swiper-container swiper">
     <div class="swiper-wrapper">

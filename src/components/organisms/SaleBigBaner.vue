@@ -1,3 +1,5 @@
+// Ten plik odpowiada za sekcje znajdującą się na podstronie wycieczki. Jest to baner zawierajacy opis tytul i przycisk. Przycisk przenosi do oferty. 
+
 <template>
   <div class="sale-travel-section">
     <section class="hero">

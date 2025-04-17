@@ -1,3 +1,5 @@
+// W tym pliku znajdują się style oraz dane o nawigacji po podstornach. Dzieki temu plikowi można w łatwy sposób przejść do innych podstron. 
+
 <template>
     <div class="pagination-container">
       <ul class="pagination">

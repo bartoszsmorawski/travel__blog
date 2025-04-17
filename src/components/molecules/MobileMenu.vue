@@ -1,3 +1,6 @@
+// Ten plik odpowiada za wygląd oraz treść jaka sie znajduje w menu (navBarze) na wersjach mobilnych aplikacji. 
+
+
 <template>
   <div class="MobileNavbar">
     <button class="hamburger" @click="() => isOpen = !isOpen">

@@ -1,6 +1,7 @@
+// Ten plik odpowiada, za rozdzielanie scieżek w aplikacji. Ten plik jest bardzo ważny dzięki niemu możemy poruszać sie po stronie i podstronach. 
+
 import HomeView from '../pages/HomeView.vue';
 import CountriesView from '../pages/AllCountries&Places.vue';
-// import CountryView from '../pages/CountryView.vue';
 import CountryArticlesView from '../pages/CountryArticlesView.vue';
 import AboutUsView from '../pages/AboutUsView.vue';
 import TravelView from '../pages/TravelView.vue';

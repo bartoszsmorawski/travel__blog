@@ -1,3 +1,5 @@
+//W tym pliku znajdują się sekcje zdjęcia linki i informacje dotyczące podstrony "Wycieczki". 
+
 <template>
   <TravelNavbar backgroundgcColor="#4A4A4A" />
   <div class="article-page">

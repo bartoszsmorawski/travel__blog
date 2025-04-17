@@ -1,3 +1,5 @@
+// Ten plik odpowiada za podstornę "O nas". Scala sekcje, stworzone wyżej i podstawia im tekst, zdjęcia i komponenty. 
+
 <template>
   <TravelNavbar backgroundgcColor="#4A4A4A" />
 

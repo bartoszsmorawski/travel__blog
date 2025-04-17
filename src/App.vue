@@ -1,3 +1,5 @@
+//Naiważniejszy plik. Odpowiada za całą stronę. Odpowiada, za ogólne ustawienia całej aplikacji takie jak funkcje style czy informacje. 
+
 <template>
   <TravelNavbar />
   <router-view />

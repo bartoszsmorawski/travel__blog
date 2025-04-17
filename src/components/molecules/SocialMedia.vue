@@ -1,3 +1,5 @@
+// Ten plik to zbiór 3 social mediów takich jak YT, FB oraz IG, jego styli oraz funkcjonalności. 
+
 <template>
     <div class="social-icons">
         <a class="SocialMediaLink" href="https://www.instagram.com/">

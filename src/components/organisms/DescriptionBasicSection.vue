@@ -1,3 +1,5 @@
+// Ten plik tworzy i nadaje style w sekcji, która w sposób klasyczny zawiera jedynie tytuł i opis na szarym tle. 
+
 <template>
   <section class="FotoBaner">
       <h2 class="Title">{{ title }}</h2>

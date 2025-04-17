@@ -1,3 +1,5 @@
+//Ten plik odpowiada za informacje style i funkcje strony głównej. Bardzo ważny plik !
+
 <template>
     <SliderGalery />
     <h2 class="ArticlesTitle">- Nasze Wpisy -</h2>

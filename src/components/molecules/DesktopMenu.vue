@@ -1,3 +1,5 @@
+// Ten plik odpowiada za wygląd oraz treść jaka sie znajduje w menu (navBarze) na zwyklych monitorach. 
+
 <template>
   <nav>
     <ul class="menu">

@@ -1,4 +1,4 @@
-//Ogólny przycisk dodawany na strone
+//W tym pliku znajduję się ogólny przycisk, który można używać do każdej sekcji.
 
 <template>
     <button class="Button">{{ buttonText }}</button>

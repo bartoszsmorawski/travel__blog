@@ -1,3 +1,5 @@
+//Ten plik to jedna z sekcji, które po kliknieciu przenoszą do artykułu. W tym przypadku obrazek znajduje sie po lewej, ma tytuł opis, oraz link przenoszący do artykułu. 
+
 <template>
   <div class="article-container">
     <img class="article-img" :src="imageSrc">

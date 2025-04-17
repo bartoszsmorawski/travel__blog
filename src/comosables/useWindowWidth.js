@@ -1,3 +1,5 @@
+//Ten plik odpowiada za responsywność. Dzięki niemu wiemy kiedy jest wersja desktopowa a kiedy mobilna. W tym przypadku zmienia się np navBar ze zwyklego na czarnego hamburgera.
+
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 
 export default function () {

@@ -1,3 +1,5 @@
+// Ten plik tworzy formularz kontaktowy i nadaje mu style. 
+
 <template>
   <section class="contact-section">
     <h2>Skontaktuj się ze mną</h2>

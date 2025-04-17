@@ -1,3 +1,5 @@
+// Ten plik odpowiada za sekcje, która jest ostylowanym linkiem do artykułów. Zawiera tytuł podtytuł, zdjęcie opis oraz link do artykułu. 
+
 <template>
   <div class="article-position">
     <div class="article-container">

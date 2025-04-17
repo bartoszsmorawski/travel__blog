@@ -1,3 +1,5 @@
+// Ten plik to jedna z sekcji, które po kliknieciu przenoszą do artykułu. W tym przypadku obrazek jest po lewej lub po prawej a po przeciwnej stronie jest opis i przycisk.
+
 <template>
     <section class="FotoSection">
         <div class="Content">

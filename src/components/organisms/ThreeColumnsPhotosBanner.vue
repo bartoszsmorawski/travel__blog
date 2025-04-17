@@ -1,9 +1,10 @@
+// Ten plik odpowiada za sekcje która scala 3 zdjęcia po prawej po lewej i po środku oraz napis i przycisk z linkiem po środku. 
+
 <template>
 <section class="trip-section">
-  <!-- Zdjęcie 1 -->
+
   <div class="trip-image image-left"></div>
 
-  <!-- Środek z tekstem -->
   <div class="trip-content">
     <h2>Wspólna wyprawa do Afryki</h2>
     <h1>Odwiedź z nami Afrykę</h1>
@@ -11,7 +12,6 @@
     <a href="#cennik" class="trip-button">Zobacz ceny</a>
   </div>
 
-  <!-- Zdjęcie 2 -->
   <div class="trip-image image-right"></div>
 </section>
 

@@ -1,3 +1,5 @@
+// W tym pliku pobierają się nowe artykuly z api i przypisują je do widgetów. Dzięki tej części kodu każdy nowy artykuł widać na stronie i przypsuje się do danego kraju. 
+
 import { onMounted, ref, computed } from 'vue';
 
 export function useArticles() {

@@ -1,3 +1,5 @@
+// Ten plik zawiera informacje o włascicielu strony. Jest to uniwersalna sekcja zawierajaca te same informacje. Sekcja technicznie zawiera opis, zdjęcie, tytuł podtytuł oraz linki do social mediów. 
+
 <template>
     <section class="AboutUsSection animate">
         <div class="container">

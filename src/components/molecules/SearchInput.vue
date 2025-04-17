@@ -1,3 +1,5 @@
+//W tym pliku jest tworzona wyszukiwarka, pod kątem stylów oraz funkcjonalności. 
+
 <template>
     <div v-if="isOpen" class="InputModal">
         <div class="Container">

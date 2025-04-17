@@ -1,3 +1,5 @@
+// W tym pliku znajdua sie poszczególne podstawowe informacje o różnych krajach. Style są takie same jedynie poprzez api w przyszłości tekst będzie podstawiał się automatycznie w zależności od tego na jakiej podstornie będziemy sie znajdować. W poniższym przypadu jest opis Austrii który ma być przypisany do /Austria. Na moment pisania tego komentarza ten tekst występuje jako przykład w każdej podstornie każdego kraju. 
+
 <template>
   <div class="ArticleContainer">
     <DescriptionBasicSection class="description-basic animate fade-up"

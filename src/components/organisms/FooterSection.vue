@@ -1,3 +1,5 @@
+// Ten plik odpowiada za tworzenie stopki. Jest to podstawowa sekcja wykorzystywana wszędzie. 
+
 <template>
     <footer class="Footer">
         <div class="Content">

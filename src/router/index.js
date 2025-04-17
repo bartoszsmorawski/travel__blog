@@ -1,3 +1,5 @@
+// Ten plik jest bardzo ważny 
+
 import { createWebHistory, createRouter } from 'vue-router';
 import { getRoutes } from './routes';
 

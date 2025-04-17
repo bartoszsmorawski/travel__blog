@@ -1,3 +1,5 @@
+// Ten plik to jedna z sekcji, które po kliknieciu przenoszą do artykułu. W tym przypadku obrazek jest tlem przyklejonym do strony, opis i przycisk jest na wyciemnionym obrazku.
+
 <template>
     <section class="FotoBaner fade-down animate">
         <h2 class="Title">{{ title }}</h2>
