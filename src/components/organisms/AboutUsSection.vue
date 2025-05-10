@@ -1,7 +1,8 @@
-// Ten plik zawiera informacje o włascicielu strony. Jest to uniwersalna sekcja zawierajaca te same informacje. Sekcja technicznie zawiera opis, zdjęcie, tytuł podtytuł oraz linki do social mediów. 
+// Ten plik zawiera informacje o włascicielu strony. Jest to uniwersalna sekcja zawierajaca te same informacje. Sekcja
+technicznie zawiera opis, zdjęcie, tytuł podtytuł oraz linki do social mediów.
 
 <template>
-    <section class="AboutUsSection animate">
+    <section class="AboutUsSection">
         <div class="container">
             <div class="image">
                 <img :src="srcImg" :alt="altText" />
@@ -44,9 +45,6 @@ defineProps({
     transition: all 0.3s linear;
 }
 
-.AboutUsSection.active {
-    transform: scale(0.7);
-}
 
 .Title {
     color: #4A4A4A;
@@ -107,9 +105,36 @@ h2 {
     color: #4A4A4A;
 }
 
-p {
+.Description {
     color: #4A4A4A;
     font-size: 16px;
     line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .image img {
+        margin: 0 auto;
+    }
+
+    .Title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .subTitle {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .Description {
+        text-align: center;
+    }
 }
 </style>

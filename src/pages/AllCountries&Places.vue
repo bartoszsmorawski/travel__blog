@@ -1,7 +1,6 @@
 // Ten plik odpowiada za podstornę "Wszystkie kraje i miejsca". Scala sekcje, stworzone wyżej i podstawia im tekst, zdjęcia i komponenty.
 
 <template>
-  <TravelNavbar backgroundgcColor="#4A4A4A" />
   <div class="article-page">
     <h1 class="title">- Kraje i miejsca -</h1>
     <h2 class="subTitle">Czyli dlaczego warto zwiedzać świat ?</h2>
@@ -13,7 +12,6 @@
 <script setup>
 import PaginationToPage from '@/components/molecules/PaginationToPage.vue';
 import LinksToArticle from '@/components/organisms/LinksToArticle.vue';
-import TravelNavbar from '@/components/organisms/TravelNavbar.vue';
 </script>
 
 <style scoped>

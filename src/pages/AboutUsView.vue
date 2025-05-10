@@ -1,7 +1,6 @@
 // Ten plik odpowiada za podstornę "O nas". Scala sekcje, stworzone wyżej i podstawia im tekst, zdjęcia i komponenty. 
 
 <template>
-  <TravelNavbar backgroundgcColor="#4A4A4A" />
 
   <h1 class="title-aboutUs">O nas - czyli o twórcach bloga podróżniczego</h1>
   <h2 class="subTitle-aboutUs ">Podróżujemy, nagrywamy filmy o podróżach i piszemy bloga!</h2>
@@ -20,7 +19,6 @@ Na Pocztówkach ze świata dzielę się moimi doświadczeniami, praktycznymi por
 </template>
 
 <script setup>
-import TravelNavbar from '@/components/organisms/TravelNavbar.vue';
 import AboutUsSection from "@/components/organisms/AboutUsSection.vue";
 import FormSection from '@/components/organisms/FormSection.vue';
 </script>

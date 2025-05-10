@@ -98,6 +98,10 @@ const isOpenSubMenu2 = ref(false);
 
 .MobileNavbar{
   position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .hamburger {
   border: none;
@@ -146,7 +150,6 @@ li a:hover {
   padding: 20px;
 }
 
-/* we will explain what these classes do next! */
 .v-enter-active,
 .v-leave-active {
   transition: opacity 0.5s ease;

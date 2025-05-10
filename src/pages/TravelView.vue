@@ -1,7 +1,6 @@
 //W tym pliku znajdują się sekcje zdjęcia linki i informacje dotyczące podstrony "Wycieczki". 
 
 <template>
-  <TravelNavbar backgroundgcColor="#4A4A4A" />
   <div class="article-page">
     <h1 class="title">- Kraje i miejsca -</h1>
     <h2 class="subTitle">Czyli dlaczego warto zwiedzać świat ?</h2>
@@ -11,7 +10,6 @@
 </template>
 
 <script setup>
-import TravelNavbar from '@/components/organisms/TravelNavbar.vue';
 import SaleBigBaner from '@/components/organisms/SaleBigBaner.vue';
 import ThreeColumnsPhotosBanner from '@/components/organisms/ThreeColumnsPhotosBanner.vue';
 </script>

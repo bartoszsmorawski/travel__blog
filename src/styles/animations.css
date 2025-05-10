@@ -9,7 +9,7 @@
 	opacity: 0;
 
 	/* to sprawia ze element jest przesuniety, tu o 300 px w dol */
-	transform: translateY(300px);
+	transform: translateY(50px);
 
 	/* to animuje cala droge */
 	transition: all 1s ease;
@@ -27,7 +27,7 @@
 
 .fade-left {
 	opacity: 0;
-	transform: translateX(-300px);
+	transform: translateX(-50px);
 	transition: all 1s ease;
 }
 
@@ -40,7 +40,7 @@
 
 .fade-right {
 	opacity: 0;
-	transform: translateX(300px);
+	transform: translateX(50px);
 	transition: all 1s ease;
 }
 
@@ -53,7 +53,7 @@
 
 .fade-up {
 	opacity: 0;
-	transform: translateY(300px);
+	transform: translateY(50px);
 	transition: all 1s ease;
 }
 

@@ -1,7 +1,6 @@
 // Ten plik odpowiada za podstorny takie jak np: "/Austria, /Polska, /USA". Scala sekcje, stworzone wyżej i podstawia im tekst, zdjęcia i komponenty.
 
 <template>
-  <TravelNavbar backgroundgcColor="#4A4A4A" />
   <div class="article-page">
     <h1 class="title">- Porozmawiajmy o krajach: {{ route.params.country }} -</h1>
     <h2 class="subTitle">Czyli co warto wiedzieć o tym kraju ?</h2>
@@ -19,7 +18,6 @@
 </template>
 
 <script setup>
-import TravelNavbar from '@/components/organisms/TravelNavbar.vue';
 import BasicInformationCountry from '@/components/organisms/BasicInformationCountry.vue';
 import { computed } from 'vue';
 
